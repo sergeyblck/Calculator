@@ -1,0 +1,3 @@
+D:/projects/CalcQuadigi/build/CMakeFiles/CalcQuaDigi.dir
+D:/projects/CalcQuadigi/build/CMakeFiles/edit_cache.dir
+D:/projects/CalcQuadigi/build/CMakeFiles/rebuild_cache.dir

@@ -1,5 +1,4 @@
-#ifndef PARSER_HPP
-#define PARSER_HPP
+#pragma once
 
 #include <string>
 #include <stack>
@@ -12,16 +11,14 @@
 class Parser {
 private:
     std::string expression;
-    size_t pos = 0;
+    int index = 0;
 
 public:
-    Parser(const std::string& expr);
+    Parser(const std::string& exp);
     INode* parse();
 
 private:
     double parseNumber();
-    int precedence(char op);
-    void processOperator(std::stack<char>& ops, std::stack<INode*>& values);
+    int precedence(char sign);
+    void processOperator(std::stack<char>& sign, std::stack<INode*>& values);
 };
-
-#endif

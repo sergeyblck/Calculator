@@ -1,16 +1,17 @@
 #include "Multipl.hpp"
 #include <iostream>
+using namespace std;
 
-Multipl::Multipl(INode* lhs, INode* rhs) : left(lhs), right(rhs) {}
+Multipl::Multipl(INode* ileft, INode* iright) : left(ileft), right(iright) {}
 
 double Multipl::calc() const {
     return left->calc() * right->calc();
 }
 
 void Multipl::print() const {
-    std::cout << "(";
+    cout << "(";
     left->print();
-    std::cout << " * ";
+    cout << " * ";
     right->print();
-    std::cout << ")";
+    cout << ")";
 }

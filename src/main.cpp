@@ -1,22 +1,23 @@
 #include <iostream>
 #include <string>
 #include "Parser.hpp"
+using namespace std;
 
 int main() {
-    std::string expr;
-    std::cout << "Enter an expression: ";
-    std::getline(std::cin, expr);
+    string expression;
+    cout << "Enter an expression: ";
+    getline(cin, expression);
 
-    std::cout << expr;
-    Parser parser(expr);
-    INode* root = parser.parse();
+    //cout << expression;
+    Parser parser(expression);
+    INode* problem = parser.parse();
 
-    std::cout << "Expression: ";
-    root->print();
-    std::cout << std::endl;
+    cout << endl << "Expression: ";
+    problem->print();
+    cout << endl;
 
-    std::cout << "Result: " << root->calc() << std::endl;
+    cout << "Output: " << problem->calc() << endl;
 
-    delete root;
+    delete problem;
     return 0;
 }

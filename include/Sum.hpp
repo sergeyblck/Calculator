@@ -1,4 +1,5 @@
 #pragma once
+
 #include "INode.hpp"
 
 class Sum : public INode {
@@ -7,7 +8,7 @@ private:
     INode* right;
 
 public:
-    Sum(INode* lhs, INode* rhs);
+    Sum(INode* ileft, INode* iright);
     double calc() const override;
     void print() const override;
 };

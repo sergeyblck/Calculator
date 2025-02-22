@@ -1,109 +1,107 @@
 #include "Parser.hpp"
 #include <iostream>
 #include <stdexcept>
+using namespace std;
 
-Parser::Parser(const std::string& expr) : expression(expr) {}
+Parser::Parser(const string& exp) : expression(exp) {}
 
 INode* Parser::parse() {
-    std::stack<INode*> values;  // Stack for values
-    std::stack<char> ops;       // Stack for operators
+    stack<INode*> values;
+    stack<char> sign;
 
-    while (pos < expression.size()) {
-        char currentChar = expression[pos];
+    while (index < expression.size()) {
+        char symbol = expression[index];
 
-        // Skip any whitespace characters
-        if (isspace(currentChar)) {
-            pos++;
+        if (isspace(symbol)) {
+            index++;
             continue;
         }
 
-        // Handle numbers
-        if (isdigit(currentChar)) {
+        if (isdigit(symbol)) {
             values.push(new Value(parseNumber()));
         }
-        // Handle opening parenthesis
-        else if (currentChar == '(') {
-            ops.push('(');
-            pos++;
+        
+        else if (symbol == '(') {
+            sign.push('(');
+            index++;
         }
-        // Handle closing parenthesis
-        else if (currentChar == ')') {
-            // Process all operators until a '(' is encountered
-            while (!ops.empty() && ops.top() != '(') {
-                processOperator(ops, values);
+        
+        else if (symbol == ')') {
+            
+            while (!sign.empty() && sign.top() != '(') {
+                processOperator(sign, values);
             }
-            ops.pop(); // Pop the '(' from the operator stack
-            pos++;
+            sign.pop();
+            index++;
         }
-        // Handle operators (+ or *)
-        else if (currentChar == '+' || currentChar == '*') {
-            // Apply operators with higher or equal precedence
-            while (!ops.empty() && precedence(ops.top()) >= precedence(currentChar)) {
-                processOperator(ops, values);
+        
+        else if (symbol == '+' || symbol == '*') {
+            
+            while (!sign.empty() && precedence(sign.top()) >= precedence(symbol)) {
+                processOperator(sign, values);
             }
-            // Push the current operator onto the operator stack
-            ops.push(currentChar);
-            pos++;
+            
+            sign.push(symbol);
+            index++;
         }
         else {
-            // Skip any unrecognized characters
-            pos++;
+            
+            index++;
         }
     }
 
-    // Process any remaining operators
-    while (!ops.empty()) {
-        processOperator(ops, values);
+    
+    while (!sign.empty()) {
+        processOperator(sign, values);
     }
 
-    // The final result should be the only value left in the stack
+    
     if (values.size() != 1) {
-        throw std::runtime_error("Error: Invalid expression, too many values left.");
+        throw runtime_error("Error: Invalid expression, too many values left.");
     }
 
     return values.top();
 }
 
-// Helper function to determine operator precedence
-int Parser::precedence(char op) {
-    if (op == '*' || op == '/') {
-        return 2;  // Higher precedence
+int Parser::precedence(char sign) {
+    if (sign == '*' || sign == '/') {
+        return 2;
     }
-    if (op == '+' || op == '-') {
-        return 1;  // Lower precedence
+    if (sign == '+' || sign == '-') {
+        return 1;
     }
-    return 0;  // No precedence for '(' or other operators
+    return 0;
 }
 
 
 double Parser::parseNumber() {
-    std::string num;
-    while (pos < expression.size() && (isdigit(expression[pos]) || expression[pos] == '.')) {
-        num += expression[pos++];
+    string num;
+    while (index < expression.size() && (isdigit(expression[index]) || expression[index] == '.')) {
+        num += expression[index++];
     }
     if (num.empty()) {
-        throw std::runtime_error("Error: Expected a number.");
+        throw runtime_error("Error: Expected a number.");
     }
-    return std::stod(num);
+    return stod(num);
 }
 
 
-void Parser::processOperator(std::stack<char>& ops, std::stack<INode*>& values) {
+void Parser::processOperator(stack<char>& sign, stack<INode*>& values) {
     if (values.size() < 2) {
-        throw std::runtime_error("Error: Not enough operands for operator.");
+        throw runtime_error("Error: Not enough operands for operator.");
     }
 
-    char op = ops.top();
-    ops.pop();
+    char firstSign = sign.top();
+    sign.pop();
 
     INode* right = values.top();
     values.pop();
     INode* left = values.top();
     values.pop();
 
-    if (op == '+') {
+    if (firstSign == '+') {
         values.push(new Sum(left, right));
-    } else if (op == '*') {
+    } else if (firstSign == '*') {
         values.push(new Multipl(left, right));
     }
 }

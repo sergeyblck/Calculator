@@ -1,4 +1,5 @@
 #pragma once
+
 #include "INode.hpp"
 
 class Value : public INode {

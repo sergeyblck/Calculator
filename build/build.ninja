@@ -44,6 +44,13 @@ cmake_ninja_workdir = D$:/projects/CalcQuadigi/build/
 
 build cmake_object_order_depends_target_CalcQuaDigi: phony || .
 
+build CMakeFiles/CalcQuaDigi.dir/src/Divide.cpp.obj: CXX_COMPILER__CalcQuaDigi_unscanned_ D$:/projects/CalcQuadigi/src/Divide.cpp || cmake_object_order_depends_target_CalcQuaDigi
+  DEP_FILE = CMakeFiles\CalcQuaDigi.dir\src\Divide.cpp.obj.d
+  FLAGS = -std=gnu++11
+  INCLUDES = -ID:/projects/CalcQuadigi/include
+  OBJECT_DIR = CMakeFiles\CalcQuaDigi.dir
+  OBJECT_FILE_DIR = CMakeFiles\CalcQuaDigi.dir\src
+
 build CMakeFiles/CalcQuaDigi.dir/src/Multipl.cpp.obj: CXX_COMPILER__CalcQuaDigi_unscanned_ D$:/projects/CalcQuadigi/src/Multipl.cpp || cmake_object_order_depends_target_CalcQuaDigi
   DEP_FILE = CMakeFiles\CalcQuaDigi.dir\src\Multipl.cpp.obj.d
   FLAGS = -std=gnu++11
@@ -53,6 +60,13 @@ build CMakeFiles/CalcQuaDigi.dir/src/Multipl.cpp.obj: CXX_COMPILER__CalcQuaDigi_
 
 build CMakeFiles/CalcQuaDigi.dir/src/Parser.cpp.obj: CXX_COMPILER__CalcQuaDigi_unscanned_ D$:/projects/CalcQuadigi/src/Parser.cpp || cmake_object_order_depends_target_CalcQuaDigi
   DEP_FILE = CMakeFiles\CalcQuaDigi.dir\src\Parser.cpp.obj.d
+  FLAGS = -std=gnu++11
+  INCLUDES = -ID:/projects/CalcQuadigi/include
+  OBJECT_DIR = CMakeFiles\CalcQuaDigi.dir
+  OBJECT_FILE_DIR = CMakeFiles\CalcQuaDigi.dir\src
+
+build CMakeFiles/CalcQuaDigi.dir/src/Substr.cpp.obj: CXX_COMPILER__CalcQuaDigi_unscanned_ D$:/projects/CalcQuadigi/src/Substr.cpp || cmake_object_order_depends_target_CalcQuaDigi
+  DEP_FILE = CMakeFiles\CalcQuaDigi.dir\src\Substr.cpp.obj.d
   FLAGS = -std=gnu++11
   INCLUDES = -ID:/projects/CalcQuadigi/include
   OBJECT_DIR = CMakeFiles\CalcQuaDigi.dir
@@ -87,7 +101,7 @@ build CMakeFiles/CalcQuaDigi.dir/src/main.cpp.obj: CXX_COMPILER__CalcQuaDigi_uns
 #############################################
 # Link the executable CalcQuaDigi.exe
 
-build CalcQuaDigi.exe: CXX_EXECUTABLE_LINKER__CalcQuaDigi_ CMakeFiles/CalcQuaDigi.dir/src/Multipl.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/Parser.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/Sum.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/Value.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/main.cpp.obj
+build CalcQuaDigi.exe: CXX_EXECUTABLE_LINKER__CalcQuaDigi_ CMakeFiles/CalcQuaDigi.dir/src/Divide.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/Multipl.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/Parser.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/Substr.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/Sum.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/Value.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/main.cpp.obj
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CalcQuaDigi.dir
   POST_BUILD = cd .

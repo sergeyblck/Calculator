@@ -128,6 +128,30 @@ CalcQuaDigi/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/build
 .PHONY : CalcQuaDigi/fast
 
+src/Divide.obj: src/Divide.cpp.obj
+.PHONY : src/Divide.obj
+
+# target to build an object file
+src/Divide.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Divide.cpp.obj
+.PHONY : src/Divide.cpp.obj
+
+src/Divide.i: src/Divide.cpp.i
+.PHONY : src/Divide.i
+
+# target to preprocess a source file
+src/Divide.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Divide.cpp.i
+.PHONY : src/Divide.cpp.i
+
+src/Divide.s: src/Divide.cpp.s
+.PHONY : src/Divide.s
+
+# target to generate assembly for a file
+src/Divide.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Divide.cpp.s
+.PHONY : src/Divide.cpp.s
+
 src/Multipl.obj: src/Multipl.cpp.obj
 .PHONY : src/Multipl.obj
 
@@ -175,6 +199,30 @@ src/Parser.s: src/Parser.cpp.s
 src/Parser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Parser.cpp.s
 .PHONY : src/Parser.cpp.s
+
+src/Substr.obj: src/Substr.cpp.obj
+.PHONY : src/Substr.obj
+
+# target to build an object file
+src/Substr.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Substr.cpp.obj
+.PHONY : src/Substr.cpp.obj
+
+src/Substr.i: src/Substr.cpp.i
+.PHONY : src/Substr.i
+
+# target to preprocess a source file
+src/Substr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Substr.cpp.i
+.PHONY : src/Substr.cpp.i
+
+src/Substr.s: src/Substr.cpp.s
+.PHONY : src/Substr.s
+
+# target to generate assembly for a file
+src/Substr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Substr.cpp.s
+.PHONY : src/Substr.cpp.s
 
 src/Sum.obj: src/Sum.cpp.obj
 .PHONY : src/Sum.obj
@@ -257,12 +305,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... CalcQuaDigi
+	@echo ... src/Divide.obj
+	@echo ... src/Divide.i
+	@echo ... src/Divide.s
 	@echo ... src/Multipl.obj
 	@echo ... src/Multipl.i
 	@echo ... src/Multipl.s
 	@echo ... src/Parser.obj
 	@echo ... src/Parser.i
 	@echo ... src/Parser.s
+	@echo ... src/Substr.obj
+	@echo ... src/Substr.i
+	@echo ... src/Substr.s
 	@echo ... src/Sum.obj
 	@echo ... src/Sum.i
 	@echo ... src/Sum.s

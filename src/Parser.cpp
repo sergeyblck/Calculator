@@ -1,5 +1,6 @@
 #include "Parser.hpp"
 #include <iostream>
+#include <cctype>
 #include <stdexcept>
 using namespace std;
 
@@ -35,7 +36,7 @@ INode* Parser::parse() {
             index++;
         }
         
-        else if (symbol == '+' || symbol == '*') {
+        else if (symbol == '+' || symbol == '*' || symbol == '-'|| symbol == '/') {
             
             while (!sign.empty() && precedence(sign.top()) >= precedence(symbol)) {
                 processOperator(sign, values);
@@ -101,7 +102,11 @@ void Parser::processOperator(stack<char>& sign, stack<INode*>& values) {
 
     if (firstSign == '+') {
         values.push(new Sum(left, right));
+    } else if (firstSign == '-') {
+        values.push(new Substr(left, right));
     } else if (firstSign == '*') {
         values.push(new Multipl(left, right));
+    }else if (firstSign == '/') {
+        values.push(new Divide(left, right));
     }
 }

@@ -2,11 +2,12 @@
 
 #include <string>
 #include <stack>
-#include <cctype>
 #include "INode.hpp"
 #include "Value.hpp"
 #include "Sum.hpp"
 #include "Multipl.hpp"
+#include "Substr.hpp"
+#include "Divide.hpp"
 
 class Parser {
 private:

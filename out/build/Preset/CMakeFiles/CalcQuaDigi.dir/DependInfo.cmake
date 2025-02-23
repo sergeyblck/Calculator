@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/projects/CalcQuadigi/src/Divide.cpp" "CMakeFiles/CalcQuaDigi.dir/src/Divide.cpp.obj" "gcc" "CMakeFiles/CalcQuaDigi.dir/src/Divide.cpp.obj.d"
+  "D:/projects/CalcQuadigi/src/ErrorHandler.cpp" "CMakeFiles/CalcQuaDigi.dir/src/ErrorHandler.cpp.obj" "gcc" "CMakeFiles/CalcQuaDigi.dir/src/ErrorHandler.cpp.obj.d"
   "D:/projects/CalcQuadigi/src/Multipl.cpp" "CMakeFiles/CalcQuaDigi.dir/src/Multipl.cpp.obj" "gcc" "CMakeFiles/CalcQuaDigi.dir/src/Multipl.cpp.obj.d"
   "D:/projects/CalcQuadigi/src/Parser.cpp" "CMakeFiles/CalcQuaDigi.dir/src/Parser.cpp.obj" "gcc" "CMakeFiles/CalcQuaDigi.dir/src/Parser.cpp.obj.d"
   "D:/projects/CalcQuadigi/src/Substr.cpp" "CMakeFiles/CalcQuaDigi.dir/src/Substr.cpp.obj" "gcc" "CMakeFiles/CalcQuaDigi.dir/src/Substr.cpp.obj.d"

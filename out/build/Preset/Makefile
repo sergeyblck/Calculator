@@ -64,6 +64,16 @@ CMAKE_BINARY_DIR = D:\projects\CalcQuadigi\out\build\Preset
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	C:\mingw64\bin\ctest.exe --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
@@ -83,6 +93,51 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	C:\mingw64\bin\cmake.exe -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	C:\mingw64\bin\cmake.exe -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	C:\mingw64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	C:\mingw64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	C:\mingw64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	C:\mingw64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -116,6 +171,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named CalcQuaDigiLib
+
+# Build rule for target.
+CalcQuaDigiLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CalcQuaDigiLib
+.PHONY : CalcQuaDigiLib
+
+# fast build rule for target.
+CalcQuaDigiLib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/build
+.PHONY : CalcQuaDigiLib/fast
+
+#=============================================================================
+# Target rules for targets named test_exe
+
+# Build rule for target.
+test_exe: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_exe
+.PHONY : test_exe
+
+# fast build rule for target.
+test_exe/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/build
+.PHONY : test_exe/fast
+
+#=============================================================================
 # Target rules for targets named CalcQuaDigi
 
 # Build rule for target.
@@ -128,11 +209,64 @@ CalcQuaDigi/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/build
 .PHONY : CalcQuaDigi/fast
 
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
 src/Divide.obj: src/Divide.cpp.obj
 .PHONY : src/Divide.obj
 
 # target to build an object file
 src/Divide.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/Divide.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Divide.cpp.obj
 .PHONY : src/Divide.cpp.obj
 
@@ -141,6 +275,7 @@ src/Divide.i: src/Divide.cpp.i
 
 # target to preprocess a source file
 src/Divide.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/Divide.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Divide.cpp.i
 .PHONY : src/Divide.cpp.i
 
@@ -149,14 +284,43 @@ src/Divide.s: src/Divide.cpp.s
 
 # target to generate assembly for a file
 src/Divide.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/Divide.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Divide.cpp.s
 .PHONY : src/Divide.cpp.s
+
+src/ErrorHandler.obj: src/ErrorHandler.cpp.obj
+.PHONY : src/ErrorHandler.obj
+
+# target to build an object file
+src/ErrorHandler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/ErrorHandler.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/ErrorHandler.cpp.obj
+.PHONY : src/ErrorHandler.cpp.obj
+
+src/ErrorHandler.i: src/ErrorHandler.cpp.i
+.PHONY : src/ErrorHandler.i
+
+# target to preprocess a source file
+src/ErrorHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/ErrorHandler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/ErrorHandler.cpp.i
+.PHONY : src/ErrorHandler.cpp.i
+
+src/ErrorHandler.s: src/ErrorHandler.cpp.s
+.PHONY : src/ErrorHandler.s
+
+# target to generate assembly for a file
+src/ErrorHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/ErrorHandler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/ErrorHandler.cpp.s
+.PHONY : src/ErrorHandler.cpp.s
 
 src/Multipl.obj: src/Multipl.cpp.obj
 .PHONY : src/Multipl.obj
 
 # target to build an object file
 src/Multipl.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/Multipl.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Multipl.cpp.obj
 .PHONY : src/Multipl.cpp.obj
 
@@ -165,6 +329,7 @@ src/Multipl.i: src/Multipl.cpp.i
 
 # target to preprocess a source file
 src/Multipl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/Multipl.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Multipl.cpp.i
 .PHONY : src/Multipl.cpp.i
 
@@ -173,6 +338,7 @@ src/Multipl.s: src/Multipl.cpp.s
 
 # target to generate assembly for a file
 src/Multipl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/Multipl.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Multipl.cpp.s
 .PHONY : src/Multipl.cpp.s
 
@@ -181,6 +347,7 @@ src/Parser.obj: src/Parser.cpp.obj
 
 # target to build an object file
 src/Parser.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/Parser.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Parser.cpp.obj
 .PHONY : src/Parser.cpp.obj
 
@@ -189,6 +356,7 @@ src/Parser.i: src/Parser.cpp.i
 
 # target to preprocess a source file
 src/Parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/Parser.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Parser.cpp.i
 .PHONY : src/Parser.cpp.i
 
@@ -197,6 +365,7 @@ src/Parser.s: src/Parser.cpp.s
 
 # target to generate assembly for a file
 src/Parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/Parser.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Parser.cpp.s
 .PHONY : src/Parser.cpp.s
 
@@ -205,6 +374,7 @@ src/Substr.obj: src/Substr.cpp.obj
 
 # target to build an object file
 src/Substr.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/Substr.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Substr.cpp.obj
 .PHONY : src/Substr.cpp.obj
 
@@ -213,6 +383,7 @@ src/Substr.i: src/Substr.cpp.i
 
 # target to preprocess a source file
 src/Substr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/Substr.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Substr.cpp.i
 .PHONY : src/Substr.cpp.i
 
@@ -221,6 +392,7 @@ src/Substr.s: src/Substr.cpp.s
 
 # target to generate assembly for a file
 src/Substr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/Substr.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Substr.cpp.s
 .PHONY : src/Substr.cpp.s
 
@@ -229,6 +401,7 @@ src/Sum.obj: src/Sum.cpp.obj
 
 # target to build an object file
 src/Sum.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/Sum.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Sum.cpp.obj
 .PHONY : src/Sum.cpp.obj
 
@@ -237,6 +410,7 @@ src/Sum.i: src/Sum.cpp.i
 
 # target to preprocess a source file
 src/Sum.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/Sum.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Sum.cpp.i
 .PHONY : src/Sum.cpp.i
 
@@ -245,6 +419,7 @@ src/Sum.s: src/Sum.cpp.s
 
 # target to generate assembly for a file
 src/Sum.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/Sum.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Sum.cpp.s
 .PHONY : src/Sum.cpp.s
 
@@ -253,6 +428,7 @@ src/Value.obj: src/Value.cpp.obj
 
 # target to build an object file
 src/Value.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/Value.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Value.cpp.obj
 .PHONY : src/Value.cpp.obj
 
@@ -261,6 +437,7 @@ src/Value.i: src/Value.cpp.i
 
 # target to preprocess a source file
 src/Value.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/Value.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Value.cpp.i
 .PHONY : src/Value.cpp.i
 
@@ -269,6 +446,7 @@ src/Value.s: src/Value.cpp.s
 
 # target to generate assembly for a file
 src/Value.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/Value.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Value.cpp.s
 .PHONY : src/Value.cpp.s
 
@@ -277,6 +455,7 @@ src/Variable.obj: src/Variable.cpp.obj
 
 # target to build an object file
 src/Variable.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/Variable.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Variable.cpp.obj
 .PHONY : src/Variable.cpp.obj
 
@@ -285,6 +464,7 @@ src/Variable.i: src/Variable.cpp.i
 
 # target to preprocess a source file
 src/Variable.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/Variable.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Variable.cpp.i
 .PHONY : src/Variable.cpp.i
 
@@ -293,6 +473,7 @@ src/Variable.s: src/Variable.cpp.s
 
 # target to generate assembly for a file
 src/Variable.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/Variable.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Variable.cpp.s
 .PHONY : src/Variable.cpp.s
 
@@ -301,6 +482,7 @@ src/main.obj: src/main.cpp.obj
 
 # target to build an object file
 src/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/main.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/main.cpp.obj
 .PHONY : src/main.cpp.obj
 
@@ -309,6 +491,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/main.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
@@ -317,8 +500,33 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/main.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+tests/test.obj: tests/test.cpp.obj
+.PHONY : tests/test.obj
+
+# target to build an object file
+tests/test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/test.cpp.obj
+.PHONY : tests/test.cpp.obj
+
+tests/test.i: tests/test.cpp.i
+.PHONY : tests/test.i
+
+# target to preprocess a source file
+tests/test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/test.cpp.i
+.PHONY : tests/test.cpp.i
+
+tests/test.s: tests/test.cpp.s
+.PHONY : tests/test.s
+
+# target to generate assembly for a file
+tests/test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/test.cpp.s
+.PHONY : tests/test.cpp.s
 
 # Help Target
 help:
@@ -327,11 +535,25 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
+	@echo ... install
+	@echo ... install/local
+	@echo ... install/strip
+	@echo ... list_install_components
 	@echo ... rebuild_cache
+	@echo ... test
 	@echo ... CalcQuaDigi
+	@echo ... CalcQuaDigiLib
+	@echo ... gmock
+	@echo ... gmock_main
+	@echo ... gtest
+	@echo ... gtest_main
+	@echo ... test_exe
 	@echo ... src/Divide.obj
 	@echo ... src/Divide.i
 	@echo ... src/Divide.s
+	@echo ... src/ErrorHandler.obj
+	@echo ... src/ErrorHandler.i
+	@echo ... src/ErrorHandler.s
 	@echo ... src/Multipl.obj
 	@echo ... src/Multipl.i
 	@echo ... src/Multipl.s
@@ -353,6 +575,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... tests/test.obj
+	@echo ... tests/test.i
+	@echo ... tests/test.s
 .PHONY : help
 
 

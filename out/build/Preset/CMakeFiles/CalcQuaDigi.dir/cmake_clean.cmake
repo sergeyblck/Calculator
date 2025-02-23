@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/CalcQuaDigi.dir/src/Divide.cpp.obj"
   "CMakeFiles/CalcQuaDigi.dir/src/Divide.cpp.obj.d"
+  "CMakeFiles/CalcQuaDigi.dir/src/ErrorHandler.cpp.obj"
+  "CMakeFiles/CalcQuaDigi.dir/src/ErrorHandler.cpp.obj.d"
   "CMakeFiles/CalcQuaDigi.dir/src/Multipl.cpp.obj"
   "CMakeFiles/CalcQuaDigi.dir/src/Multipl.cpp.obj.d"
   "CMakeFiles/CalcQuaDigi.dir/src/Parser.cpp.obj"

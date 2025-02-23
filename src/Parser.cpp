@@ -1,4 +1,5 @@
 #include "Parser.hpp"
+#include "ErrorHandler.hpp"
 #include <iostream>
 #include <cctype>
 #include <stdexcept>
@@ -9,6 +10,8 @@ Parser::Parser(const string& exp) : expression(exp) {}
 INode* Parser::parse() {
     stack<INode*> values;
     stack<char> sign;
+    int state = 0;
+    int letsLookAtHowOurPatanthesisBehave = 0;
 
     while (index < expression.size()) {
         char symbol = expression[index];
@@ -19,16 +22,37 @@ INode* Parser::parse() {
         }
 
         if (isdigit(symbol)) {
+            if(state == 1 || state == 3){
+                ErrorHandler::printErrorAndExit("Invalid expression: digit in a wrong place");
+            }
+            state=1;
             values.push(new Value(parseNumber()));
         }
         else if (isalpha(symbol)) {
+            if(state == 1 || state == 3){
+                ErrorHandler::printErrorAndExit("Invalid expression: variable in a wrong place");
+            }
+            state = 1;
             values.push(new Variable(parseVariable()));
         }
         else if (symbol == '(') {
+            if(state == 1 || state == 3){
+                ErrorHandler::printErrorAndExit("Invalid expression: open parentheses in a wrong place");
+            }
+            state = 2;
+            letsLookAtHowOurPatanthesisBehave++;
             sign.push('(');
             index++;
         }
         else if (symbol == ')') {
+            if(state != 1){
+                ErrorHandler::printErrorAndExit("Invalid expression: close parentheses in a wrong place");
+            }
+            state = 3;
+            letsLookAtHowOurPatanthesisBehave--;
+            if(letsLookAtHowOurPatanthesisBehave < 0){
+                ErrorHandler::printErrorAndExit("Invalid expression: bad boi is closing before opening");
+            }
             while (!sign.empty() && sign.top() != '(') {
                 processOperator(sign, values);
             }
@@ -36,6 +60,10 @@ INode* Parser::parse() {
             index++;
         }
         else if (symbol == '+' || symbol == '-' || symbol == '*' || symbol == '/') {
+            if(state != 1 && state != 3){
+                ErrorHandler::printErrorAndExit("Invalid expression: sign in a wrong place");
+            }
+            state = 4;
             while (!sign.empty() && precedence(sign.top()) >= precedence(symbol)) {
                 processOperator(sign, values);
             }
@@ -43,7 +71,7 @@ INode* Parser::parse() {
             index++;
         }
         else {
-            index++;
+            ErrorHandler::printErrorAndExit("Invalid expression: unknown character");
         }
     }
 
@@ -52,7 +80,7 @@ INode* Parser::parse() {
     }
 
     if (values.size() != 1) {
-        throw std::runtime_error("Error: Invalid expression, too many values left.");
+        ErrorHandler::printErrorAndExit("Invalid expression");
     }
 
     return values.top();
@@ -71,20 +99,20 @@ int Parser::precedence(char sign) {
 
 
 double Parser::parseNumber() {
-    string num;
+    string number;
     while (index < expression.size() && (isdigit(expression[index]) || expression[index] == '.')) {
-        num += expression[index++];
+        number += expression[index++];
     }
-    if (num.empty()) {
-        throw runtime_error("Error: Expected a number.");
+    if (!isNumber(number)) {
+        ErrorHandler::printErrorAndExit("Invalid expression, not a correct number");
     }
-    return stod(num);
+    return stod(number);
 }
 
 
 void Parser::processOperator(stack<char>& sign, stack<INode*>& values) {
     if (values.size() < 2) {
-        throw runtime_error("Error: Not enough operands for operator.");
+        ErrorHandler::printErrorAndExit("Invalid expression, not enough values");
     }
 
     char firstSign = sign.top();
@@ -111,10 +139,6 @@ string Parser::parseVariable() {
 
     while (index < expression.size() && (isalpha(expression[index]) || isdigit(expression[index]))) {
         varName += expression[index++];
-    }
-
-    if (varName.empty()) {
-        throw runtime_error("Error: Expected variable name.");
     }
 
     return varName;

@@ -1,0 +1,8 @@
+HelloTest.BasicAssertions 1 0.0796957
+ParserTest.SimpleExpression 6 0.0219649
+ParserTest.ExpressionWithVariables 5 0.00239678
+ParserTest.ComplexExpression 4 0.00335665
+ParserTest.InvalidExpression 1 0.0124489
+MultiplTest.MultiplicationTest 5 0.00333898
+MultiplTest.NestedMultiplication 5 0.00343294
+---

@@ -1,0 +1,5 @@
+if(EXISTS "D:/projects/CalcQuadigi/out/build/Preset/CalcQuaDigi[1]_tests.cmake")
+  include("D:/projects/CalcQuadigi/out/build/Preset/CalcQuaDigi[1]_tests.cmake")
+else()
+  add_test(CalcQuaDigi_NOT_BUILT CalcQuaDigi_NOT_BUILT)
+endif()

@@ -1,0 +1,5 @@
+if(EXISTS "D:/projects/CalcQuadigi/build/test_exe[1]_tests.cmake")
+  include("D:/projects/CalcQuadigi/build/test_exe[1]_tests.cmake")
+else()
+  add_test(test_exe_NOT_BUILT test_exe_NOT_BUILT)
+endif()

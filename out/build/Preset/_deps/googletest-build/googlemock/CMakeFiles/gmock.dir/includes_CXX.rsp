@@ -1,0 +1,1 @@
+-ID:/projects/CalcQuadigi/include -I"D:/projects/CalcQuadigi/out/build/Preset/_deps/googletest-src/googlemock/include" -I"D:/projects/CalcQuadigi/out/build/Preset/_deps/googletest-src/googlemock" -isystem "D:/projects/CalcQuadigi/out/build/Preset/_deps/googletest-src/googletest/include" -isystem "D:/projects/CalcQuadigi/out/build/Preset/_deps/googletest-src/googletest"

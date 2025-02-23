@@ -3,8 +3,11 @@
 #include <set>
 #include "Parser.hpp"
 #include "Variable.hpp"
+#include "ErrorHandler.hpp"
 
 using namespace std;
+
+
 
 int main() {
     string expression;
@@ -27,10 +30,13 @@ int main() {
     }
 
     for (const auto& var : variables) {
-        double value;
+        string value;
         cout << "Enter value for " << var << ": ";
         cin >> value;
-        Variable::setValue(var, value);
+        if(!isNumber(value)){
+            ErrorHandler::printErrorAndExit("Value is not a number");
+        }
+        Variable::setValue(var, stod(value));
     }
 
     cout << "\nExpression: ";

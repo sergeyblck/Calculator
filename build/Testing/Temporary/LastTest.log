@@ -1,0 +1,167 @@
+Start testing: Feb 24 00:15 FLE Standard Time
+----------------------------------------------------------
+1/6 Testing: ParserTest.SimpleExpression
+1/6 Test: ParserTest.SimpleExpression
+Command: "D:/projects/CalcQuadigi/build/test_exe.exe" "--gtest_filter=ParserTest.SimpleExpression" "--gtest_also_run_disabled_tests"
+Directory: D:/projects/CalcQuadigi/build
+"ParserTest.SimpleExpression" start time: Feb 24 00:15 FLE Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ParserTest.SimpleExpression
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ParserTest
+[ RUN      ] ParserTest.SimpleExpression
+[       OK ] ParserTest.SimpleExpression (0 ms)
+[----------] 1 test from ParserTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.13 sec
+----------------------------------------------------------
+Test Passed.
+"ParserTest.SimpleExpression" end time: Feb 24 00:15 FLE Standard Time
+"ParserTest.SimpleExpression" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/6 Testing: ParserTest.ExpressionWithVariables
+2/6 Test: ParserTest.ExpressionWithVariables
+Command: "D:/projects/CalcQuadigi/build/test_exe.exe" "--gtest_filter=ParserTest.ExpressionWithVariables" "--gtest_also_run_disabled_tests"
+Directory: D:/projects/CalcQuadigi/build
+"ParserTest.ExpressionWithVariables" start time: Feb 24 00:15 FLE Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ParserTest.ExpressionWithVariables
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ParserTest
+[ RUN      ] ParserTest.ExpressionWithVariables
+[       OK ] ParserTest.ExpressionWithVariables (0 ms)
+[----------] 1 test from ParserTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ParserTest.ExpressionWithVariables" end time: Feb 24 00:15 FLE Standard Time
+"ParserTest.ExpressionWithVariables" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/6 Testing: ParserTest.ComplexExpression
+3/6 Test: ParserTest.ComplexExpression
+Command: "D:/projects/CalcQuadigi/build/test_exe.exe" "--gtest_filter=ParserTest.ComplexExpression" "--gtest_also_run_disabled_tests"
+Directory: D:/projects/CalcQuadigi/build
+"ParserTest.ComplexExpression" start time: Feb 24 00:15 FLE Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ParserTest.ComplexExpression
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ParserTest
+[ RUN      ] ParserTest.ComplexExpression
+[       OK ] ParserTest.ComplexExpression (0 ms)
+[----------] 1 test from ParserTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ParserTest.ComplexExpression" end time: Feb 24 00:15 FLE Standard Time
+"ParserTest.ComplexExpression" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/6 Testing: ParserTest.InvalidExpression
+4/6 Test: ParserTest.InvalidExpression
+Command: "D:/projects/CalcQuadigi/build/test_exe.exe" "--gtest_filter=ParserTest.InvalidExpression" "--gtest_also_run_disabled_tests"
+Directory: D:/projects/CalcQuadigi/build
+"ParserTest.InvalidExpression" start time: Feb 24 00:15 FLE Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ParserTest.InvalidExpression
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ParserTest
+[ RUN      ] ParserTest.InvalidExpression
+
+Error: Invalid expression, not enough values
+[       OK ] ParserTest.InvalidExpression (0 ms)
+[----------] 1 test from ParserTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ParserTest.InvalidExpression" end time: Feb 24 00:15 FLE Standard Time
+"ParserTest.InvalidExpression" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/6 Testing: MultiplTest.MultiplicationTest
+5/6 Test: MultiplTest.MultiplicationTest
+Command: "D:/projects/CalcQuadigi/build/test_exe.exe" "--gtest_filter=MultiplTest.MultiplicationTest" "--gtest_also_run_disabled_tests"
+Directory: D:/projects/CalcQuadigi/build
+"MultiplTest.MultiplicationTest" start time: Feb 24 00:15 FLE Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = MultiplTest.MultiplicationTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MultiplTest
+[ RUN      ] MultiplTest.MultiplicationTest
+[       OK ] MultiplTest.MultiplicationTest (0 ms)
+[----------] 1 test from MultiplTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"MultiplTest.MultiplicationTest" end time: Feb 24 00:15 FLE Standard Time
+"MultiplTest.MultiplicationTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/6 Testing: MultiplTest.NestedMultiplication
+6/6 Test: MultiplTest.NestedMultiplication
+Command: "D:/projects/CalcQuadigi/build/test_exe.exe" "--gtest_filter=MultiplTest.NestedMultiplication" "--gtest_also_run_disabled_tests"
+Directory: D:/projects/CalcQuadigi/build
+"MultiplTest.NestedMultiplication" start time: Feb 24 00:15 FLE Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = MultiplTest.NestedMultiplication
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MultiplTest
+[ RUN      ] MultiplTest.NestedMultiplication
+[       OK ] MultiplTest.NestedMultiplication (0 ms)
+[----------] 1 test from MultiplTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"MultiplTest.NestedMultiplication" end time: Feb 24 00:15 FLE Standard Time
+"MultiplTest.NestedMultiplication" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 24 00:15 FLE Standard Time

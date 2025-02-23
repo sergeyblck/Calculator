@@ -84,12 +84,12 @@ clean: CMakeFiles/CalcQuaDigi.dir/clean
 CMakeFiles/CalcQuaDigi.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target CalcQuaDigi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target CalcQuaDigi"
 .PHONY : CMakeFiles/CalcQuaDigi.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CalcQuaDigi.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/CalcQuaDigi.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles 0
 .PHONY : CMakeFiles/CalcQuaDigi.dir/rule
@@ -101,7 +101,7 @@ CalcQuaDigi: CMakeFiles/CalcQuaDigi.dir/rule
 # codegen rule for target.
 CMakeFiles/CalcQuaDigi.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Finished codegen for target CalcQuaDigi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Finished codegen for target CalcQuaDigi"
 .PHONY : CMakeFiles/CalcQuaDigi.dir/codegen
 
 # clean rule for target.

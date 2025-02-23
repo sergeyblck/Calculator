@@ -272,6 +272,30 @@ src/Value.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Value.cpp.s
 .PHONY : src/Value.cpp.s
 
+src/Variable.obj: src/Variable.cpp.obj
+.PHONY : src/Variable.obj
+
+# target to build an object file
+src/Variable.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Variable.cpp.obj
+.PHONY : src/Variable.cpp.obj
+
+src/Variable.i: src/Variable.cpp.i
+.PHONY : src/Variable.i
+
+# target to preprocess a source file
+src/Variable.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Variable.cpp.i
+.PHONY : src/Variable.cpp.i
+
+src/Variable.s: src/Variable.cpp.s
+.PHONY : src/Variable.s
+
+# target to generate assembly for a file
+src/Variable.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Variable.cpp.s
+.PHONY : src/Variable.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -323,6 +347,9 @@ help:
 	@echo ... src/Value.obj
 	@echo ... src/Value.i
 	@echo ... src/Value.s
+	@echo ... src/Variable.obj
+	@echo ... src/Variable.i
+	@echo ... src/Variable.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

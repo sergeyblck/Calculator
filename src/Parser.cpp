@@ -21,48 +21,43 @@ INode* Parser::parse() {
         if (isdigit(symbol)) {
             values.push(new Value(parseNumber()));
         }
-        
+        else if (isalpha(symbol)) {
+            values.push(new Variable(parseVariable()));
+        }
         else if (symbol == '(') {
             sign.push('(');
             index++;
         }
-        
         else if (symbol == ')') {
-            
             while (!sign.empty() && sign.top() != '(') {
                 processOperator(sign, values);
             }
             sign.pop();
             index++;
         }
-        
-        else if (symbol == '+' || symbol == '*' || symbol == '-'|| symbol == '/') {
-            
+        else if (symbol == '+' || symbol == '-' || symbol == '*' || symbol == '/') {
             while (!sign.empty() && precedence(sign.top()) >= precedence(symbol)) {
                 processOperator(sign, values);
             }
-            
             sign.push(symbol);
             index++;
         }
         else {
-            
             index++;
         }
     }
 
-    
     while (!sign.empty()) {
         processOperator(sign, values);
     }
 
-    
     if (values.size() != 1) {
-        throw runtime_error("Error: Invalid expression, too many values left.");
+        throw std::runtime_error("Error: Invalid expression, too many values left.");
     }
 
     return values.top();
 }
+
 
 int Parser::precedence(char sign) {
     if (sign == '*' || sign == '/') {
@@ -109,4 +104,18 @@ void Parser::processOperator(stack<char>& sign, stack<INode*>& values) {
     }else if (firstSign == '/') {
         values.push(new Divide(left, right));
     }
+}
+
+string Parser::parseVariable() {
+    string varName;
+
+    while (index < expression.size() && (isalpha(expression[index]) || isdigit(expression[index]))) {
+        varName += expression[index++];
+    }
+
+    if (varName.empty()) {
+        throw runtime_error("Error: Expected variable name.");
+    }
+
+    return varName;
 }

@@ -8,6 +8,7 @@
 #include "Multipl.hpp"
 #include "Substr.hpp"
 #include "Divide.hpp"
+#include "Variable.hpp"
 
 class Parser {
 private:
@@ -21,5 +22,6 @@ public:
 private:
     double parseNumber();
     int precedence(char sign);
+    std::string parseVariable();
     void processOperator(std::stack<char>& sign, std::stack<INode*>& values);
 };

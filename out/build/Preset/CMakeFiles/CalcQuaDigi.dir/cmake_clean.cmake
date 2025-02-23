@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CalcQuaDigi.dir/src/Sum.cpp.obj.d"
   "CMakeFiles/CalcQuaDigi.dir/src/Value.cpp.obj"
   "CMakeFiles/CalcQuaDigi.dir/src/Value.cpp.obj.d"
+  "CMakeFiles/CalcQuaDigi.dir/src/Variable.cpp.obj"
+  "CMakeFiles/CalcQuaDigi.dir/src/Variable.cpp.obj.d"
   "CMakeFiles/CalcQuaDigi.dir/src/main.cpp.obj"
   "CMakeFiles/CalcQuaDigi.dir/src/main.cpp.obj.d"
   "CalcQuaDigi.exe"

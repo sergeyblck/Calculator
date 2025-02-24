@@ -9,27 +9,33 @@
 using namespace std;
 
 
-
+// Start of the program
 int main() {
-    while(true){
-        string expression;
-        cout << "Enter an expression: ";
-        getline(cin, expression);
 
-        Parser parser(expression);
-        INode* problem = parser.parse();
+    //Entering expression
+    string expression;
+    cout << "Enter an expression: ";
+    getline(cin, expression);
 
-        
-        set<string> variables = Variable::extractVariables(expression);
-        VariableInputer::requestVariableValues(variables);
+    //Initializing and parsing the expression into a tree
+    Parser parser(expression);
+    INode* problem = parser.parse();
 
-        cout << "\nExpression: ";
-        problem->print();
-        cout << endl;
+    //Searchig for names of varaibles
+    set<string> variables = Variable::extractVariables(expression);
 
-        cout << "Output: " << problem->calc() << endl;
+    //Entering values for variables
+    VariableInputer::requestVariableValues(variables);
 
-        delete problem;
-    }
+    //Printing exspression with paranthesis
+    cout << "\nExpression: ";
+    problem->print();
+    cout << endl;
+
+    //Printing result of the expression
+    cout << "Output: " << problem->calc() << endl;
+
+    delete problem;
+    
     return 0;
 }

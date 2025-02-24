@@ -3,7 +3,9 @@
 #include "Utils.hpp"
 #include <iostream>
 #include <cctype>
+#include <locale>
 #include <stdexcept>
+#include <iomanip>
 using namespace std;
 
 Parser::Parser(const string& exp) : expression(exp) {}
@@ -17,11 +19,13 @@ INode* Parser::parse() {
     while (index < expression.size()) {
         char symbol = expression[index];
 
+        //skipping if space
         if (isspace(symbol)) {
             index++;
             continue;
         }
 
+        // pushing value into values stack
         if (isdigit(symbol)) {
             if(state == 1 || state == 3){
                 ErrorHandler::printErrorAndExit("Invalid expression: digit in a wrong place");
@@ -29,6 +33,7 @@ INode* Parser::parse() {
             state=1;
             values.push(new Value(parseNumber()));
         }
+        // pushing variable into values stack
         else if (isalpha(symbol)) {
             if(state == 1 || state == 3){
                 ErrorHandler::printErrorAndExit("Invalid expression: variable in a wrong place");
@@ -36,6 +41,7 @@ INode* Parser::parse() {
             state = 1;
             values.push(new Variable(parseVariable()));
         }
+        // pushing '(' into sign stack
         else if (symbol == '(') {
             if(state == 1 || state == 3){
                 ErrorHandler::printErrorAndExit("Invalid expression: open parentheses in a wrong place");
@@ -45,6 +51,7 @@ INode* Parser::parse() {
             sign.push('(');
             index++;
         }
+        // pushing into tree and poping last '('
         else if (symbol == ')') {
             if(state != 1 && state != 3){
                 ErrorHandler::printErrorAndExit("Invalid expression: close parentheses in a wrong place");
@@ -54,17 +61,22 @@ INode* Parser::parse() {
             if(letsLookAtHowOurPatanthesisBehave < 0){
                 ErrorHandler::printErrorAndExit("Invalid expression: bad boi is closing before opening");
             }
+
+            // Popping signs and values in matter of precedence to push them into a tree
             while (!sign.empty() && sign.top() != '(') {
                 processOperator(sign, values);
             }
             sign.pop();
             index++;
         }
+        // pushing a sign into sign stack
         else if (symbol == '+' || symbol == '-' || symbol == '*' || symbol == '/') {
             if(state != 1 && state != 3){
                 ErrorHandler::printErrorAndExit("Invalid expression: sign in a wrong place");
             }
             state = 4;
+
+            // pushing values and operations into a tree if previous precedence sign is more or equal
             while (!sign.empty() && precedence(sign.top()) >= precedence(symbol)) {
                 processOperator(sign, values);
             }
@@ -76,14 +88,12 @@ INode* Parser::parse() {
         }
     }
 
+    // Add the rest of signs and values into a tree
     while (!sign.empty()) {
         processOperator(sign, values);
     }
 
-    if (values.size() != 1) {
-        ErrorHandler::printErrorAndExit("Invalid expression");
-    }
-
+    //return the root node
     return values.top();
 }
 
@@ -107,6 +117,8 @@ double Parser::parseNumber() {
     if (!Utils::isNumber(number)) {
         ErrorHandler::printErrorAndExit("Invalid expression, not a correct number");
     }
+    std::setlocale(LC_NUMERIC, "C");
+    std::cout << std::setprecision(10);
     return stod(number);
 }
 

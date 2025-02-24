@@ -1,10 +1,10 @@
-Start testing: Feb 24 18:29 FLE Standard Time
+Start testing: Feb 24 21:26 FLE Standard Time
 ----------------------------------------------------------
 1/16 Testing: B_VaruableTest.SimpleVariableTest
 1/16 Test: B_VaruableTest.SimpleVariableTest
 Command: "D:/projects/CalcQuadigi/build/test_exe.exe" "--gtest_filter=B_VaruableTest.SimpleVariableTest" "--gtest_also_run_disabled_tests"
 Directory: D:/projects/CalcQuadigi/build
-"B_VaruableTest.SimpleVariableTest" start time: Feb 24 18:29 FLE Standard Time
+"B_VaruableTest.SimpleVariableTest" start time: Feb 24 21:26 FLE Standard Time
 Output:
 ----------------------------------------------------------
 Running main() from D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -20,10 +20,10 @@ Note: Google Test filter = B_VaruableTest.SimpleVariableTest
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.10 sec
 ----------------------------------------------------------
 Test Passed.
-"B_VaruableTest.SimpleVariableTest" end time: Feb 24 18:29 FLE Standard Time
+"B_VaruableTest.SimpleVariableTest" end time: Feb 24 21:26 FLE Standard Time
 "B_VaruableTest.SimpleVariableTest" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -31,7 +31,7 @@ Test Passed.
 2/16 Test: B_VaruableTest.AdvancedVariableTest
 Command: "D:/projects/CalcQuadigi/build/test_exe.exe" "--gtest_filter=B_VaruableTest.AdvancedVariableTest" "--gtest_also_run_disabled_tests"
 Directory: D:/projects/CalcQuadigi/build
-"B_VaruableTest.AdvancedVariableTest" start time: Feb 24 18:29 FLE Standard Time
+"B_VaruableTest.AdvancedVariableTest" start time: Feb 24 21:26 FLE Standard Time
 Output:
 ----------------------------------------------------------
 Running main() from D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -47,10 +47,10 @@ Note: Google Test filter = B_VaruableTest.AdvancedVariableTest
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.05 sec
 ----------------------------------------------------------
 Test Passed.
-"B_VaruableTest.AdvancedVariableTest" end time: Feb 24 18:29 FLE Standard Time
+"B_VaruableTest.AdvancedVariableTest" end time: Feb 24 21:26 FLE Standard Time
 "B_VaruableTest.AdvancedVariableTest" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -58,7 +58,7 @@ Test Passed.
 3/16 Test: A_SumTest.SimpleSumTest
 Command: "D:/projects/CalcQuadigi/build/test_exe.exe" "--gtest_filter=A_SumTest.SimpleSumTest" "--gtest_also_run_disabled_tests"
 Directory: D:/projects/CalcQuadigi/build
-"A_SumTest.SimpleSumTest" start time: Feb 24 18:29 FLE Standard Time
+"A_SumTest.SimpleSumTest" start time: Feb 24 21:26 FLE Standard Time
 Output:
 ----------------------------------------------------------
 Running main() from D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -74,10 +74,10 @@ Note: Google Test filter = A_SumTest.SimpleSumTest
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"A_SumTest.SimpleSumTest" end time: Feb 24 18:29 FLE Standard Time
+"A_SumTest.SimpleSumTest" end time: Feb 24 21:26 FLE Standard Time
 "A_SumTest.SimpleSumTest" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -85,7 +85,7 @@ Test Passed.
 4/16 Test: A_SubstractionTest.SimpleSubstractionTest
 Command: "D:/projects/CalcQuadigi/build/test_exe.exe" "--gtest_filter=A_SubstractionTest.SimpleSubstractionTest" "--gtest_also_run_disabled_tests"
 Directory: D:/projects/CalcQuadigi/build
-"A_SubstractionTest.SimpleSubstractionTest" start time: Feb 24 18:29 FLE Standard Time
+"A_SubstractionTest.SimpleSubstractionTest" start time: Feb 24 21:26 FLE Standard Time
 Output:
 ----------------------------------------------------------
 Running main() from D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -101,10 +101,10 @@ Note: Google Test filter = A_SubstractionTest.SimpleSubstractionTest
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.03 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"A_SubstractionTest.SimpleSubstractionTest" end time: Feb 24 18:29 FLE Standard Time
+"A_SubstractionTest.SimpleSubstractionTest" end time: Feb 24 21:26 FLE Standard Time
 "A_SubstractionTest.SimpleSubstractionTest" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -112,7 +112,7 @@ Test Passed.
 5/16 Test: C_ParserTest.SimpleExpression
 Command: "D:/projects/CalcQuadigi/build/test_exe.exe" "--gtest_filter=C_ParserTest.SimpleExpression" "--gtest_also_run_disabled_tests"
 Directory: D:/projects/CalcQuadigi/build
-"C_ParserTest.SimpleExpression" start time: Feb 24 18:29 FLE Standard Time
+"C_ParserTest.SimpleExpression" start time: Feb 24 21:26 FLE Standard Time
 Output:
 ----------------------------------------------------------
 Running main() from D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -128,10 +128,10 @@ Note: Google Test filter = C_ParserTest.SimpleExpression
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"C_ParserTest.SimpleExpression" end time: Feb 24 18:29 FLE Standard Time
+"C_ParserTest.SimpleExpression" end time: Feb 24 21:26 FLE Standard Time
 "C_ParserTest.SimpleExpression" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -139,7 +139,7 @@ Test Passed.
 6/16 Test: C_ParserTest.ExpressionWithVariable
 Command: "D:/projects/CalcQuadigi/build/test_exe.exe" "--gtest_filter=C_ParserTest.ExpressionWithVariable" "--gtest_also_run_disabled_tests"
 Directory: D:/projects/CalcQuadigi/build
-"C_ParserTest.ExpressionWithVariable" start time: Feb 24 18:29 FLE Standard Time
+"C_ParserTest.ExpressionWithVariable" start time: Feb 24 21:26 FLE Standard Time
 Output:
 ----------------------------------------------------------
 Running main() from D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -155,10 +155,10 @@ Note: Google Test filter = C_ParserTest.ExpressionWithVariable
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"C_ParserTest.ExpressionWithVariable" end time: Feb 24 18:29 FLE Standard Time
+"C_ParserTest.ExpressionWithVariable" end time: Feb 24 21:26 FLE Standard Time
 "C_ParserTest.ExpressionWithVariable" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -166,7 +166,7 @@ Test Passed.
 7/16 Test: C_ParserTest.ComplexExpression
 Command: "D:/projects/CalcQuadigi/build/test_exe.exe" "--gtest_filter=C_ParserTest.ComplexExpression" "--gtest_also_run_disabled_tests"
 Directory: D:/projects/CalcQuadigi/build
-"C_ParserTest.ComplexExpression" start time: Feb 24 18:29 FLE Standard Time
+"C_ParserTest.ComplexExpression" start time: Feb 24 21:26 FLE Standard Time
 Output:
 ----------------------------------------------------------
 Running main() from D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -182,10 +182,10 @@ Note: Google Test filter = C_ParserTest.ComplexExpression
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"C_ParserTest.ComplexExpression" end time: Feb 24 18:29 FLE Standard Time
+"C_ParserTest.ComplexExpression" end time: Feb 24 21:26 FLE Standard Time
 "C_ParserTest.ComplexExpression" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -193,7 +193,7 @@ Test Passed.
 8/16 Test: A_MultiplicationTest.SimpleMultiplication
 Command: "D:/projects/CalcQuadigi/build/test_exe.exe" "--gtest_filter=A_MultiplicationTest.SimpleMultiplication" "--gtest_also_run_disabled_tests"
 Directory: D:/projects/CalcQuadigi/build
-"A_MultiplicationTest.SimpleMultiplication" start time: Feb 24 18:29 FLE Standard Time
+"A_MultiplicationTest.SimpleMultiplication" start time: Feb 24 21:26 FLE Standard Time
 Output:
 ----------------------------------------------------------
 Running main() from D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -209,10 +209,10 @@ Note: Google Test filter = A_MultiplicationTest.SimpleMultiplication
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"A_MultiplicationTest.SimpleMultiplication" end time: Feb 24 18:29 FLE Standard Time
+"A_MultiplicationTest.SimpleMultiplication" end time: Feb 24 21:26 FLE Standard Time
 "A_MultiplicationTest.SimpleMultiplication" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -220,7 +220,7 @@ Test Passed.
 9/16 Test: D_ErrorHandlerTest.DivisionByZeroError
 Command: "D:/projects/CalcQuadigi/build/test_exe.exe" "--gtest_filter=D_ErrorHandlerTest.DivisionByZeroError" "--gtest_also_run_disabled_tests"
 Directory: D:/projects/CalcQuadigi/build
-"D_ErrorHandlerTest.DivisionByZeroError" start time: Feb 24 18:29 FLE Standard Time
+"D_ErrorHandlerTest.DivisionByZeroError" start time: Feb 24 21:26 FLE Standard Time
 Output:
 ----------------------------------------------------------
 Running main() from D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -239,7 +239,7 @@ Note: Google Test filter = D_ErrorHandlerTest.DivisionByZeroError
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"D_ErrorHandlerTest.DivisionByZeroError" end time: Feb 24 18:29 FLE Standard Time
+"D_ErrorHandlerTest.DivisionByZeroError" end time: Feb 24 21:26 FLE Standard Time
 "D_ErrorHandlerTest.DivisionByZeroError" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -247,7 +247,7 @@ Test Passed.
 10/16 Test: D_ErrorHandlerTest.DigitInWrongPlace
 Command: "D:/projects/CalcQuadigi/build/test_exe.exe" "--gtest_filter=D_ErrorHandlerTest.DigitInWrongPlace" "--gtest_also_run_disabled_tests"
 Directory: D:/projects/CalcQuadigi/build
-"D_ErrorHandlerTest.DigitInWrongPlace" start time: Feb 24 18:29 FLE Standard Time
+"D_ErrorHandlerTest.DigitInWrongPlace" start time: Feb 24 21:26 FLE Standard Time
 Output:
 ----------------------------------------------------------
 Running main() from D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -263,10 +263,10 @@ Note: Google Test filter = D_ErrorHandlerTest.DigitInWrongPlace
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"D_ErrorHandlerTest.DigitInWrongPlace" end time: Feb 24 18:29 FLE Standard Time
+"D_ErrorHandlerTest.DigitInWrongPlace" end time: Feb 24 21:26 FLE Standard Time
 "D_ErrorHandlerTest.DigitInWrongPlace" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -274,7 +274,7 @@ Test Passed.
 11/16 Test: D_ErrorHandlerTest.VariableInWrongPlace
 Command: "D:/projects/CalcQuadigi/build/test_exe.exe" "--gtest_filter=D_ErrorHandlerTest.VariableInWrongPlace" "--gtest_also_run_disabled_tests"
 Directory: D:/projects/CalcQuadigi/build
-"D_ErrorHandlerTest.VariableInWrongPlace" start time: Feb 24 18:29 FLE Standard Time
+"D_ErrorHandlerTest.VariableInWrongPlace" start time: Feb 24 21:26 FLE Standard Time
 Output:
 ----------------------------------------------------------
 Running main() from D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -290,10 +290,10 @@ Note: Google Test filter = D_ErrorHandlerTest.VariableInWrongPlace
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"D_ErrorHandlerTest.VariableInWrongPlace" end time: Feb 24 18:29 FLE Standard Time
+"D_ErrorHandlerTest.VariableInWrongPlace" end time: Feb 24 21:26 FLE Standard Time
 "D_ErrorHandlerTest.VariableInWrongPlace" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -301,7 +301,7 @@ Test Passed.
 12/16 Test: D_ErrorHandlerTest.OpenParanthesisWrongPlace
 Command: "D:/projects/CalcQuadigi/build/test_exe.exe" "--gtest_filter=D_ErrorHandlerTest.OpenParanthesisWrongPlace" "--gtest_also_run_disabled_tests"
 Directory: D:/projects/CalcQuadigi/build
-"D_ErrorHandlerTest.OpenParanthesisWrongPlace" start time: Feb 24 18:29 FLE Standard Time
+"D_ErrorHandlerTest.OpenParanthesisWrongPlace" start time: Feb 24 21:26 FLE Standard Time
 Output:
 ----------------------------------------------------------
 Running main() from D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -317,10 +317,10 @@ Note: Google Test filter = D_ErrorHandlerTest.OpenParanthesisWrongPlace
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"D_ErrorHandlerTest.OpenParanthesisWrongPlace" end time: Feb 24 18:29 FLE Standard Time
+"D_ErrorHandlerTest.OpenParanthesisWrongPlace" end time: Feb 24 21:26 FLE Standard Time
 "D_ErrorHandlerTest.OpenParanthesisWrongPlace" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -328,7 +328,7 @@ Test Passed.
 13/16 Test: D_ErrorHandlerTest.CloseParanthesisWrongPlace
 Command: "D:/projects/CalcQuadigi/build/test_exe.exe" "--gtest_filter=D_ErrorHandlerTest.CloseParanthesisWrongPlace" "--gtest_also_run_disabled_tests"
 Directory: D:/projects/CalcQuadigi/build
-"D_ErrorHandlerTest.CloseParanthesisWrongPlace" start time: Feb 24 18:29 FLE Standard Time
+"D_ErrorHandlerTest.CloseParanthesisWrongPlace" start time: Feb 24 21:26 FLE Standard Time
 Output:
 ----------------------------------------------------------
 Running main() from D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -344,10 +344,10 @@ Note: Google Test filter = D_ErrorHandlerTest.CloseParanthesisWrongPlace
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.03 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"D_ErrorHandlerTest.CloseParanthesisWrongPlace" end time: Feb 24 18:29 FLE Standard Time
+"D_ErrorHandlerTest.CloseParanthesisWrongPlace" end time: Feb 24 21:26 FLE Standard Time
 "D_ErrorHandlerTest.CloseParanthesisWrongPlace" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -355,7 +355,7 @@ Test Passed.
 14/16 Test: A_DivideTest.SimpleDivision
 Command: "D:/projects/CalcQuadigi/build/test_exe.exe" "--gtest_filter=A_DivideTest.SimpleDivision" "--gtest_also_run_disabled_tests"
 Directory: D:/projects/CalcQuadigi/build
-"A_DivideTest.SimpleDivision" start time: Feb 24 18:29 FLE Standard Time
+"A_DivideTest.SimpleDivision" start time: Feb 24 21:26 FLE Standard Time
 Output:
 ----------------------------------------------------------
 Running main() from D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -371,10 +371,10 @@ Note: Google Test filter = A_DivideTest.SimpleDivision
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"A_DivideTest.SimpleDivision" end time: Feb 24 18:29 FLE Standard Time
+"A_DivideTest.SimpleDivision" end time: Feb 24 21:26 FLE Standard Time
 "A_DivideTest.SimpleDivision" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -382,7 +382,7 @@ Test Passed.
 15/16 Test: A_DivideTest.FloatDivision
 Command: "D:/projects/CalcQuadigi/build/test_exe.exe" "--gtest_filter=A_DivideTest.FloatDivision" "--gtest_also_run_disabled_tests"
 Directory: D:/projects/CalcQuadigi/build
-"A_DivideTest.FloatDivision" start time: Feb 24 18:29 FLE Standard Time
+"A_DivideTest.FloatDivision" start time: Feb 24 21:26 FLE Standard Time
 Output:
 ----------------------------------------------------------
 Running main() from D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -401,7 +401,7 @@ Note: Google Test filter = A_DivideTest.FloatDivision
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"A_DivideTest.FloatDivision" end time: Feb 24 18:29 FLE Standard Time
+"A_DivideTest.FloatDivision" end time: Feb 24 21:26 FLE Standard Time
 "A_DivideTest.FloatDivision" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -409,7 +409,7 @@ Test Passed.
 16/16 Test: A_DivideTest.DivisionByZero
 Command: "D:/projects/CalcQuadigi/build/test_exe.exe" "--gtest_filter=A_DivideTest.DivisionByZero" "--gtest_also_run_disabled_tests"
 Directory: D:/projects/CalcQuadigi/build
-"A_DivideTest.DivisionByZero" start time: Feb 24 18:29 FLE Standard Time
+"A_DivideTest.DivisionByZero" start time: Feb 24 21:26 FLE Standard Time
 Output:
 ----------------------------------------------------------
 Running main() from D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -428,8 +428,8 @@ Note: Google Test filter = A_DivideTest.DivisionByZero
 Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"A_DivideTest.DivisionByZero" end time: Feb 24 18:29 FLE Standard Time
+"A_DivideTest.DivisionByZero" end time: Feb 24 21:26 FLE Standard Time
 "A_DivideTest.DivisionByZero" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Feb 24 18:29 FLE Standard Time
+End testing: Feb 24 21:26 FLE Standard Time

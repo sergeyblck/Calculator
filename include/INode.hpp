@@ -1,5 +1,6 @@
 #pragma once
 
+//main interface
 class INode {
 public:
     virtual ~INode() = default;

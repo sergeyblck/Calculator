@@ -25,9 +25,6 @@ std::set<string> Variable::extractVariables(const string& expression) {
 
 double Variable::calc() const {
     auto it = values.find(name);
-    if (it == values.end()) {
-        throw runtime_error("No value for " + name);
-    }
     return it->second;
 }
 

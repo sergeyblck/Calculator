@@ -3,6 +3,7 @@
 #include "INode.hpp"
 #include <string>
 #include <map>
+#include <set>
 
 class Variable : public INode {
     std::string name;
@@ -16,4 +17,5 @@ public:
 
     static void setValue(const std::string& name, double value);
     static double getValue(const std::string& name);
+    static std::set<std::string> extractVariables(const std::string& expression);
 };

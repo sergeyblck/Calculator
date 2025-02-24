@@ -161,11 +161,26 @@ CMakeFiles/CalcQuaDigiLib.dir/src/Sum.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CalcQuaDigiLib.dir/src/Sum.cpp.s"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\projects\CalcQuadigi\src\Sum.cpp -o CMakeFiles\CalcQuaDigiLib.dir\src\Sum.cpp.s
 
+CMakeFiles/CalcQuaDigiLib.dir/src/Utils.cpp.obj: CMakeFiles/CalcQuaDigiLib.dir/flags.make
+CMakeFiles/CalcQuaDigiLib.dir/src/Utils.cpp.obj: CMakeFiles/CalcQuaDigiLib.dir/includes_CXX.rsp
+CMakeFiles/CalcQuaDigiLib.dir/src/Utils.cpp.obj: D:/projects/CalcQuadigi/src/Utils.cpp
+CMakeFiles/CalcQuaDigiLib.dir/src/Utils.cpp.obj: CMakeFiles/CalcQuaDigiLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CalcQuaDigiLib.dir/src/Utils.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CalcQuaDigiLib.dir/src/Utils.cpp.obj -MF CMakeFiles\CalcQuaDigiLib.dir\src\Utils.cpp.obj.d -o CMakeFiles\CalcQuaDigiLib.dir\src\Utils.cpp.obj -c D:\projects\CalcQuadigi\src\Utils.cpp
+
+CMakeFiles/CalcQuaDigiLib.dir/src/Utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CalcQuaDigiLib.dir/src/Utils.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\projects\CalcQuadigi\src\Utils.cpp > CMakeFiles\CalcQuaDigiLib.dir\src\Utils.cpp.i
+
+CMakeFiles/CalcQuaDigiLib.dir/src/Utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CalcQuaDigiLib.dir/src/Utils.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\projects\CalcQuadigi\src\Utils.cpp -o CMakeFiles\CalcQuaDigiLib.dir\src\Utils.cpp.s
+
 CMakeFiles/CalcQuaDigiLib.dir/src/Value.cpp.obj: CMakeFiles/CalcQuaDigiLib.dir/flags.make
 CMakeFiles/CalcQuaDigiLib.dir/src/Value.cpp.obj: CMakeFiles/CalcQuaDigiLib.dir/includes_CXX.rsp
 CMakeFiles/CalcQuaDigiLib.dir/src/Value.cpp.obj: D:/projects/CalcQuadigi/src/Value.cpp
 CMakeFiles/CalcQuaDigiLib.dir/src/Value.cpp.obj: CMakeFiles/CalcQuaDigiLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CalcQuaDigiLib.dir/src/Value.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/CalcQuaDigiLib.dir/src/Value.cpp.obj"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CalcQuaDigiLib.dir/src/Value.cpp.obj -MF CMakeFiles\CalcQuaDigiLib.dir\src\Value.cpp.obj.d -o CMakeFiles\CalcQuaDigiLib.dir\src\Value.cpp.obj -c D:\projects\CalcQuadigi\src\Value.cpp
 
 CMakeFiles/CalcQuaDigiLib.dir/src/Value.cpp.i: cmake_force
@@ -180,7 +195,7 @@ CMakeFiles/CalcQuaDigiLib.dir/src/Variable.cpp.obj: CMakeFiles/CalcQuaDigiLib.di
 CMakeFiles/CalcQuaDigiLib.dir/src/Variable.cpp.obj: CMakeFiles/CalcQuaDigiLib.dir/includes_CXX.rsp
 CMakeFiles/CalcQuaDigiLib.dir/src/Variable.cpp.obj: D:/projects/CalcQuadigi/src/Variable.cpp
 CMakeFiles/CalcQuaDigiLib.dir/src/Variable.cpp.obj: CMakeFiles/CalcQuaDigiLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/CalcQuaDigiLib.dir/src/Variable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/CalcQuaDigiLib.dir/src/Variable.cpp.obj"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CalcQuaDigiLib.dir/src/Variable.cpp.obj -MF CMakeFiles\CalcQuaDigiLib.dir\src\Variable.cpp.obj.d -o CMakeFiles\CalcQuaDigiLib.dir\src\Variable.cpp.obj -c D:\projects\CalcQuadigi\src\Variable.cpp
 
 CMakeFiles/CalcQuaDigiLib.dir/src/Variable.cpp.i: cmake_force
@@ -191,11 +206,26 @@ CMakeFiles/CalcQuaDigiLib.dir/src/Variable.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CalcQuaDigiLib.dir/src/Variable.cpp.s"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\projects\CalcQuadigi\src\Variable.cpp -o CMakeFiles\CalcQuaDigiLib.dir\src\Variable.cpp.s
 
+CMakeFiles/CalcQuaDigiLib.dir/src/VariableInputer.cpp.obj: CMakeFiles/CalcQuaDigiLib.dir/flags.make
+CMakeFiles/CalcQuaDigiLib.dir/src/VariableInputer.cpp.obj: CMakeFiles/CalcQuaDigiLib.dir/includes_CXX.rsp
+CMakeFiles/CalcQuaDigiLib.dir/src/VariableInputer.cpp.obj: D:/projects/CalcQuadigi/src/VariableInputer.cpp
+CMakeFiles/CalcQuaDigiLib.dir/src/VariableInputer.cpp.obj: CMakeFiles/CalcQuaDigiLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/CalcQuaDigiLib.dir/src/VariableInputer.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CalcQuaDigiLib.dir/src/VariableInputer.cpp.obj -MF CMakeFiles\CalcQuaDigiLib.dir\src\VariableInputer.cpp.obj.d -o CMakeFiles\CalcQuaDigiLib.dir\src\VariableInputer.cpp.obj -c D:\projects\CalcQuadigi\src\VariableInputer.cpp
+
+CMakeFiles/CalcQuaDigiLib.dir/src/VariableInputer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CalcQuaDigiLib.dir/src/VariableInputer.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\projects\CalcQuadigi\src\VariableInputer.cpp > CMakeFiles\CalcQuaDigiLib.dir\src\VariableInputer.cpp.i
+
+CMakeFiles/CalcQuaDigiLib.dir/src/VariableInputer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CalcQuaDigiLib.dir/src/VariableInputer.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\projects\CalcQuadigi\src\VariableInputer.cpp -o CMakeFiles\CalcQuaDigiLib.dir\src\VariableInputer.cpp.s
+
 CMakeFiles/CalcQuaDigiLib.dir/src/main.cpp.obj: CMakeFiles/CalcQuaDigiLib.dir/flags.make
 CMakeFiles/CalcQuaDigiLib.dir/src/main.cpp.obj: CMakeFiles/CalcQuaDigiLib.dir/includes_CXX.rsp
 CMakeFiles/CalcQuaDigiLib.dir/src/main.cpp.obj: D:/projects/CalcQuadigi/src/main.cpp
 CMakeFiles/CalcQuaDigiLib.dir/src/main.cpp.obj: CMakeFiles/CalcQuaDigiLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/CalcQuaDigiLib.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/CalcQuaDigiLib.dir/src/main.cpp.obj"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CalcQuaDigiLib.dir/src/main.cpp.obj -MF CMakeFiles\CalcQuaDigiLib.dir\src\main.cpp.obj.d -o CMakeFiles\CalcQuaDigiLib.dir\src\main.cpp.obj -c D:\projects\CalcQuadigi\src\main.cpp
 
 CMakeFiles/CalcQuaDigiLib.dir/src/main.cpp.i: cmake_force
@@ -214,8 +244,10 @@ CalcQuaDigiLib_OBJECTS = \
 "CMakeFiles/CalcQuaDigiLib.dir/src/Parser.cpp.obj" \
 "CMakeFiles/CalcQuaDigiLib.dir/src/Substr.cpp.obj" \
 "CMakeFiles/CalcQuaDigiLib.dir/src/Sum.cpp.obj" \
+"CMakeFiles/CalcQuaDigiLib.dir/src/Utils.cpp.obj" \
 "CMakeFiles/CalcQuaDigiLib.dir/src/Value.cpp.obj" \
 "CMakeFiles/CalcQuaDigiLib.dir/src/Variable.cpp.obj" \
+"CMakeFiles/CalcQuaDigiLib.dir/src/VariableInputer.cpp.obj" \
 "CMakeFiles/CalcQuaDigiLib.dir/src/main.cpp.obj"
 
 # External object files for target CalcQuaDigiLib
@@ -227,12 +259,14 @@ libCalcQuaDigiLib.a: CMakeFiles/CalcQuaDigiLib.dir/src/Multipl.cpp.obj
 libCalcQuaDigiLib.a: CMakeFiles/CalcQuaDigiLib.dir/src/Parser.cpp.obj
 libCalcQuaDigiLib.a: CMakeFiles/CalcQuaDigiLib.dir/src/Substr.cpp.obj
 libCalcQuaDigiLib.a: CMakeFiles/CalcQuaDigiLib.dir/src/Sum.cpp.obj
+libCalcQuaDigiLib.a: CMakeFiles/CalcQuaDigiLib.dir/src/Utils.cpp.obj
 libCalcQuaDigiLib.a: CMakeFiles/CalcQuaDigiLib.dir/src/Value.cpp.obj
 libCalcQuaDigiLib.a: CMakeFiles/CalcQuaDigiLib.dir/src/Variable.cpp.obj
+libCalcQuaDigiLib.a: CMakeFiles/CalcQuaDigiLib.dir/src/VariableInputer.cpp.obj
 libCalcQuaDigiLib.a: CMakeFiles/CalcQuaDigiLib.dir/src/main.cpp.obj
 libCalcQuaDigiLib.a: CMakeFiles/CalcQuaDigiLib.dir/build.make
 libCalcQuaDigiLib.a: CMakeFiles/CalcQuaDigiLib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libCalcQuaDigiLib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX static library libCalcQuaDigiLib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\CalcQuaDigiLib.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CalcQuaDigiLib.dir\link.txt --verbose=$(VERBOSE)
 

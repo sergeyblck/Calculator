@@ -423,6 +423,33 @@ src/Sum.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Sum.cpp.s
 .PHONY : src/Sum.cpp.s
 
+src/Utils.obj: src/Utils.cpp.obj
+.PHONY : src/Utils.obj
+
+# target to build an object file
+src/Utils.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/Utils.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Utils.cpp.obj
+.PHONY : src/Utils.cpp.obj
+
+src/Utils.i: src/Utils.cpp.i
+.PHONY : src/Utils.i
+
+# target to preprocess a source file
+src/Utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/Utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Utils.cpp.i
+.PHONY : src/Utils.cpp.i
+
+src/Utils.s: src/Utils.cpp.s
+.PHONY : src/Utils.s
+
+# target to generate assembly for a file
+src/Utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/Utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Utils.cpp.s
+.PHONY : src/Utils.cpp.s
+
 src/Value.obj: src/Value.cpp.obj
 .PHONY : src/Value.obj
 
@@ -477,6 +504,33 @@ src/Variable.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/Variable.cpp.s
 .PHONY : src/Variable.cpp.s
 
+src/VariableInputer.obj: src/VariableInputer.cpp.obj
+.PHONY : src/VariableInputer.obj
+
+# target to build an object file
+src/VariableInputer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/VariableInputer.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/VariableInputer.cpp.obj
+.PHONY : src/VariableInputer.cpp.obj
+
+src/VariableInputer.i: src/VariableInputer.cpp.i
+.PHONY : src/VariableInputer.i
+
+# target to preprocess a source file
+src/VariableInputer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/VariableInputer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/VariableInputer.cpp.i
+.PHONY : src/VariableInputer.cpp.i
+
+src/VariableInputer.s: src/VariableInputer.cpp.s
+.PHONY : src/VariableInputer.s
+
+# target to generate assembly for a file
+src/VariableInputer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigiLib.dir\build.make CMakeFiles/CalcQuaDigiLib.dir/src/VariableInputer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/VariableInputer.cpp.s
+.PHONY : src/VariableInputer.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -504,29 +558,173 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CalcQuaDigi.dir\build.make CMakeFiles/CalcQuaDigi.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-tests/test.obj: tests/test.cpp.obj
-.PHONY : tests/test.obj
+tests/TestDivide.obj: tests/TestDivide.cpp.obj
+.PHONY : tests/TestDivide.obj
 
 # target to build an object file
-tests/test.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/test.cpp.obj
-.PHONY : tests/test.cpp.obj
+tests/TestDivide.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/TestDivide.cpp.obj
+.PHONY : tests/TestDivide.cpp.obj
 
-tests/test.i: tests/test.cpp.i
-.PHONY : tests/test.i
+tests/TestDivide.i: tests/TestDivide.cpp.i
+.PHONY : tests/TestDivide.i
 
 # target to preprocess a source file
-tests/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/test.cpp.i
-.PHONY : tests/test.cpp.i
+tests/TestDivide.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/TestDivide.cpp.i
+.PHONY : tests/TestDivide.cpp.i
 
-tests/test.s: tests/test.cpp.s
-.PHONY : tests/test.s
+tests/TestDivide.s: tests/TestDivide.cpp.s
+.PHONY : tests/TestDivide.s
 
 # target to generate assembly for a file
-tests/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/test.cpp.s
-.PHONY : tests/test.cpp.s
+tests/TestDivide.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/TestDivide.cpp.s
+.PHONY : tests/TestDivide.cpp.s
+
+tests/TestErrorHandler.obj: tests/TestErrorHandler.cpp.obj
+.PHONY : tests/TestErrorHandler.obj
+
+# target to build an object file
+tests/TestErrorHandler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/TestErrorHandler.cpp.obj
+.PHONY : tests/TestErrorHandler.cpp.obj
+
+tests/TestErrorHandler.i: tests/TestErrorHandler.cpp.i
+.PHONY : tests/TestErrorHandler.i
+
+# target to preprocess a source file
+tests/TestErrorHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/TestErrorHandler.cpp.i
+.PHONY : tests/TestErrorHandler.cpp.i
+
+tests/TestErrorHandler.s: tests/TestErrorHandler.cpp.s
+.PHONY : tests/TestErrorHandler.s
+
+# target to generate assembly for a file
+tests/TestErrorHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/TestErrorHandler.cpp.s
+.PHONY : tests/TestErrorHandler.cpp.s
+
+tests/TestMultipl.obj: tests/TestMultipl.cpp.obj
+.PHONY : tests/TestMultipl.obj
+
+# target to build an object file
+tests/TestMultipl.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/TestMultipl.cpp.obj
+.PHONY : tests/TestMultipl.cpp.obj
+
+tests/TestMultipl.i: tests/TestMultipl.cpp.i
+.PHONY : tests/TestMultipl.i
+
+# target to preprocess a source file
+tests/TestMultipl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/TestMultipl.cpp.i
+.PHONY : tests/TestMultipl.cpp.i
+
+tests/TestMultipl.s: tests/TestMultipl.cpp.s
+.PHONY : tests/TestMultipl.s
+
+# target to generate assembly for a file
+tests/TestMultipl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/TestMultipl.cpp.s
+.PHONY : tests/TestMultipl.cpp.s
+
+tests/TestParser.obj: tests/TestParser.cpp.obj
+.PHONY : tests/TestParser.obj
+
+# target to build an object file
+tests/TestParser.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/TestParser.cpp.obj
+.PHONY : tests/TestParser.cpp.obj
+
+tests/TestParser.i: tests/TestParser.cpp.i
+.PHONY : tests/TestParser.i
+
+# target to preprocess a source file
+tests/TestParser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/TestParser.cpp.i
+.PHONY : tests/TestParser.cpp.i
+
+tests/TestParser.s: tests/TestParser.cpp.s
+.PHONY : tests/TestParser.s
+
+# target to generate assembly for a file
+tests/TestParser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/TestParser.cpp.s
+.PHONY : tests/TestParser.cpp.s
+
+tests/TestSubstr.obj: tests/TestSubstr.cpp.obj
+.PHONY : tests/TestSubstr.obj
+
+# target to build an object file
+tests/TestSubstr.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/TestSubstr.cpp.obj
+.PHONY : tests/TestSubstr.cpp.obj
+
+tests/TestSubstr.i: tests/TestSubstr.cpp.i
+.PHONY : tests/TestSubstr.i
+
+# target to preprocess a source file
+tests/TestSubstr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/TestSubstr.cpp.i
+.PHONY : tests/TestSubstr.cpp.i
+
+tests/TestSubstr.s: tests/TestSubstr.cpp.s
+.PHONY : tests/TestSubstr.s
+
+# target to generate assembly for a file
+tests/TestSubstr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/TestSubstr.cpp.s
+.PHONY : tests/TestSubstr.cpp.s
+
+tests/TestSum.obj: tests/TestSum.cpp.obj
+.PHONY : tests/TestSum.obj
+
+# target to build an object file
+tests/TestSum.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/TestSum.cpp.obj
+.PHONY : tests/TestSum.cpp.obj
+
+tests/TestSum.i: tests/TestSum.cpp.i
+.PHONY : tests/TestSum.i
+
+# target to preprocess a source file
+tests/TestSum.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/TestSum.cpp.i
+.PHONY : tests/TestSum.cpp.i
+
+tests/TestSum.s: tests/TestSum.cpp.s
+.PHONY : tests/TestSum.s
+
+# target to generate assembly for a file
+tests/TestSum.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/TestSum.cpp.s
+.PHONY : tests/TestSum.cpp.s
+
+tests/TestVariable.obj: tests/TestVariable.cpp.obj
+.PHONY : tests/TestVariable.obj
+
+# target to build an object file
+tests/TestVariable.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/TestVariable.cpp.obj
+.PHONY : tests/TestVariable.cpp.obj
+
+tests/TestVariable.i: tests/TestVariable.cpp.i
+.PHONY : tests/TestVariable.i
+
+# target to preprocess a source file
+tests/TestVariable.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/TestVariable.cpp.i
+.PHONY : tests/TestVariable.cpp.i
+
+tests/TestVariable.s: tests/TestVariable.cpp.s
+.PHONY : tests/TestVariable.s
+
+# target to generate assembly for a file
+tests/TestVariable.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_exe.dir\build.make CMakeFiles/test_exe.dir/tests/TestVariable.cpp.s
+.PHONY : tests/TestVariable.cpp.s
 
 # Help Target
 help:
@@ -566,18 +764,42 @@ help:
 	@echo ... src/Sum.obj
 	@echo ... src/Sum.i
 	@echo ... src/Sum.s
+	@echo ... src/Utils.obj
+	@echo ... src/Utils.i
+	@echo ... src/Utils.s
 	@echo ... src/Value.obj
 	@echo ... src/Value.i
 	@echo ... src/Value.s
 	@echo ... src/Variable.obj
 	@echo ... src/Variable.i
 	@echo ... src/Variable.s
+	@echo ... src/VariableInputer.obj
+	@echo ... src/VariableInputer.i
+	@echo ... src/VariableInputer.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
-	@echo ... tests/test.obj
-	@echo ... tests/test.i
-	@echo ... tests/test.s
+	@echo ... tests/TestDivide.obj
+	@echo ... tests/TestDivide.i
+	@echo ... tests/TestDivide.s
+	@echo ... tests/TestErrorHandler.obj
+	@echo ... tests/TestErrorHandler.i
+	@echo ... tests/TestErrorHandler.s
+	@echo ... tests/TestMultipl.obj
+	@echo ... tests/TestMultipl.i
+	@echo ... tests/TestMultipl.s
+	@echo ... tests/TestParser.obj
+	@echo ... tests/TestParser.i
+	@echo ... tests/TestParser.s
+	@echo ... tests/TestSubstr.obj
+	@echo ... tests/TestSubstr.i
+	@echo ... tests/TestSubstr.s
+	@echo ... tests/TestSum.obj
+	@echo ... tests/TestSum.i
+	@echo ... tests/TestSum.s
+	@echo ... tests/TestVariable.obj
+	@echo ... tests/TestVariable.i
+	@echo ... tests/TestVariable.s
 .PHONY : help
 
 

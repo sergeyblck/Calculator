@@ -1,5 +1,6 @@
 #include "Parser.hpp"
 #include "ErrorHandler.hpp"
+#include "Utils.hpp"
 #include <iostream>
 #include <cctype>
 #include <stdexcept>
@@ -45,7 +46,7 @@ INode* Parser::parse() {
             index++;
         }
         else if (symbol == ')') {
-            if(state != 1){
+            if(state != 1 && state != 3){
                 ErrorHandler::printErrorAndExit("Invalid expression: close parentheses in a wrong place");
             }
             state = 3;
@@ -103,7 +104,7 @@ double Parser::parseNumber() {
     while (index < expression.size() && (isdigit(expression[index]) || expression[index] == '.')) {
         number += expression[index++];
     }
-    if (!isNumber(number)) {
+    if (!Utils::isNumber(number)) {
         ErrorHandler::printErrorAndExit("Invalid expression, not a correct number");
     }
     return stod(number);

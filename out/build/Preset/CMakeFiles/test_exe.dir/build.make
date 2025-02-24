@@ -71,29 +71,131 @@ include CMakeFiles/test_exe.dir/flags.make
 CMakeFiles/test_exe.dir/codegen:
 .PHONY : CMakeFiles/test_exe.dir/codegen
 
-CMakeFiles/test_exe.dir/tests/test.cpp.obj: CMakeFiles/test_exe.dir/flags.make
-CMakeFiles/test_exe.dir/tests/test.cpp.obj: CMakeFiles/test_exe.dir/includes_CXX.rsp
-CMakeFiles/test_exe.dir/tests/test.cpp.obj: D:/projects/CalcQuadigi/tests/test.cpp
-CMakeFiles/test_exe.dir/tests/test.cpp.obj: CMakeFiles/test_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_exe.dir/tests/test.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_exe.dir/tests/test.cpp.obj -MF CMakeFiles\test_exe.dir\tests\test.cpp.obj.d -o CMakeFiles\test_exe.dir\tests\test.cpp.obj -c D:\projects\CalcQuadigi\tests\test.cpp
+CMakeFiles/test_exe.dir/tests/TestDivide.cpp.obj: CMakeFiles/test_exe.dir/flags.make
+CMakeFiles/test_exe.dir/tests/TestDivide.cpp.obj: CMakeFiles/test_exe.dir/includes_CXX.rsp
+CMakeFiles/test_exe.dir/tests/TestDivide.cpp.obj: D:/projects/CalcQuadigi/tests/TestDivide.cpp
+CMakeFiles/test_exe.dir/tests/TestDivide.cpp.obj: CMakeFiles/test_exe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_exe.dir/tests/TestDivide.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_exe.dir/tests/TestDivide.cpp.obj -MF CMakeFiles\test_exe.dir\tests\TestDivide.cpp.obj.d -o CMakeFiles\test_exe.dir\tests\TestDivide.cpp.obj -c D:\projects\CalcQuadigi\tests\TestDivide.cpp
 
-CMakeFiles/test_exe.dir/tests/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_exe.dir/tests/test.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\projects\CalcQuadigi\tests\test.cpp > CMakeFiles\test_exe.dir\tests\test.cpp.i
+CMakeFiles/test_exe.dir/tests/TestDivide.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_exe.dir/tests/TestDivide.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\projects\CalcQuadigi\tests\TestDivide.cpp > CMakeFiles\test_exe.dir\tests\TestDivide.cpp.i
 
-CMakeFiles/test_exe.dir/tests/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_exe.dir/tests/test.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\projects\CalcQuadigi\tests\test.cpp -o CMakeFiles\test_exe.dir\tests\test.cpp.s
+CMakeFiles/test_exe.dir/tests/TestDivide.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_exe.dir/tests/TestDivide.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\projects\CalcQuadigi\tests\TestDivide.cpp -o CMakeFiles\test_exe.dir\tests\TestDivide.cpp.s
+
+CMakeFiles/test_exe.dir/tests/TestErrorHandler.cpp.obj: CMakeFiles/test_exe.dir/flags.make
+CMakeFiles/test_exe.dir/tests/TestErrorHandler.cpp.obj: CMakeFiles/test_exe.dir/includes_CXX.rsp
+CMakeFiles/test_exe.dir/tests/TestErrorHandler.cpp.obj: D:/projects/CalcQuadigi/tests/TestErrorHandler.cpp
+CMakeFiles/test_exe.dir/tests/TestErrorHandler.cpp.obj: CMakeFiles/test_exe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test_exe.dir/tests/TestErrorHandler.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_exe.dir/tests/TestErrorHandler.cpp.obj -MF CMakeFiles\test_exe.dir\tests\TestErrorHandler.cpp.obj.d -o CMakeFiles\test_exe.dir\tests\TestErrorHandler.cpp.obj -c D:\projects\CalcQuadigi\tests\TestErrorHandler.cpp
+
+CMakeFiles/test_exe.dir/tests/TestErrorHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_exe.dir/tests/TestErrorHandler.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\projects\CalcQuadigi\tests\TestErrorHandler.cpp > CMakeFiles\test_exe.dir\tests\TestErrorHandler.cpp.i
+
+CMakeFiles/test_exe.dir/tests/TestErrorHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_exe.dir/tests/TestErrorHandler.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\projects\CalcQuadigi\tests\TestErrorHandler.cpp -o CMakeFiles\test_exe.dir\tests\TestErrorHandler.cpp.s
+
+CMakeFiles/test_exe.dir/tests/TestMultipl.cpp.obj: CMakeFiles/test_exe.dir/flags.make
+CMakeFiles/test_exe.dir/tests/TestMultipl.cpp.obj: CMakeFiles/test_exe.dir/includes_CXX.rsp
+CMakeFiles/test_exe.dir/tests/TestMultipl.cpp.obj: D:/projects/CalcQuadigi/tests/TestMultipl.cpp
+CMakeFiles/test_exe.dir/tests/TestMultipl.cpp.obj: CMakeFiles/test_exe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test_exe.dir/tests/TestMultipl.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_exe.dir/tests/TestMultipl.cpp.obj -MF CMakeFiles\test_exe.dir\tests\TestMultipl.cpp.obj.d -o CMakeFiles\test_exe.dir\tests\TestMultipl.cpp.obj -c D:\projects\CalcQuadigi\tests\TestMultipl.cpp
+
+CMakeFiles/test_exe.dir/tests/TestMultipl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_exe.dir/tests/TestMultipl.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\projects\CalcQuadigi\tests\TestMultipl.cpp > CMakeFiles\test_exe.dir\tests\TestMultipl.cpp.i
+
+CMakeFiles/test_exe.dir/tests/TestMultipl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_exe.dir/tests/TestMultipl.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\projects\CalcQuadigi\tests\TestMultipl.cpp -o CMakeFiles\test_exe.dir\tests\TestMultipl.cpp.s
+
+CMakeFiles/test_exe.dir/tests/TestParser.cpp.obj: CMakeFiles/test_exe.dir/flags.make
+CMakeFiles/test_exe.dir/tests/TestParser.cpp.obj: CMakeFiles/test_exe.dir/includes_CXX.rsp
+CMakeFiles/test_exe.dir/tests/TestParser.cpp.obj: D:/projects/CalcQuadigi/tests/TestParser.cpp
+CMakeFiles/test_exe.dir/tests/TestParser.cpp.obj: CMakeFiles/test_exe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test_exe.dir/tests/TestParser.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_exe.dir/tests/TestParser.cpp.obj -MF CMakeFiles\test_exe.dir\tests\TestParser.cpp.obj.d -o CMakeFiles\test_exe.dir\tests\TestParser.cpp.obj -c D:\projects\CalcQuadigi\tests\TestParser.cpp
+
+CMakeFiles/test_exe.dir/tests/TestParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_exe.dir/tests/TestParser.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\projects\CalcQuadigi\tests\TestParser.cpp > CMakeFiles\test_exe.dir\tests\TestParser.cpp.i
+
+CMakeFiles/test_exe.dir/tests/TestParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_exe.dir/tests/TestParser.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\projects\CalcQuadigi\tests\TestParser.cpp -o CMakeFiles\test_exe.dir\tests\TestParser.cpp.s
+
+CMakeFiles/test_exe.dir/tests/TestSubstr.cpp.obj: CMakeFiles/test_exe.dir/flags.make
+CMakeFiles/test_exe.dir/tests/TestSubstr.cpp.obj: CMakeFiles/test_exe.dir/includes_CXX.rsp
+CMakeFiles/test_exe.dir/tests/TestSubstr.cpp.obj: D:/projects/CalcQuadigi/tests/TestSubstr.cpp
+CMakeFiles/test_exe.dir/tests/TestSubstr.cpp.obj: CMakeFiles/test_exe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test_exe.dir/tests/TestSubstr.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_exe.dir/tests/TestSubstr.cpp.obj -MF CMakeFiles\test_exe.dir\tests\TestSubstr.cpp.obj.d -o CMakeFiles\test_exe.dir\tests\TestSubstr.cpp.obj -c D:\projects\CalcQuadigi\tests\TestSubstr.cpp
+
+CMakeFiles/test_exe.dir/tests/TestSubstr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_exe.dir/tests/TestSubstr.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\projects\CalcQuadigi\tests\TestSubstr.cpp > CMakeFiles\test_exe.dir\tests\TestSubstr.cpp.i
+
+CMakeFiles/test_exe.dir/tests/TestSubstr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_exe.dir/tests/TestSubstr.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\projects\CalcQuadigi\tests\TestSubstr.cpp -o CMakeFiles\test_exe.dir\tests\TestSubstr.cpp.s
+
+CMakeFiles/test_exe.dir/tests/TestSum.cpp.obj: CMakeFiles/test_exe.dir/flags.make
+CMakeFiles/test_exe.dir/tests/TestSum.cpp.obj: CMakeFiles/test_exe.dir/includes_CXX.rsp
+CMakeFiles/test_exe.dir/tests/TestSum.cpp.obj: D:/projects/CalcQuadigi/tests/TestSum.cpp
+CMakeFiles/test_exe.dir/tests/TestSum.cpp.obj: CMakeFiles/test_exe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test_exe.dir/tests/TestSum.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_exe.dir/tests/TestSum.cpp.obj -MF CMakeFiles\test_exe.dir\tests\TestSum.cpp.obj.d -o CMakeFiles\test_exe.dir\tests\TestSum.cpp.obj -c D:\projects\CalcQuadigi\tests\TestSum.cpp
+
+CMakeFiles/test_exe.dir/tests/TestSum.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_exe.dir/tests/TestSum.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\projects\CalcQuadigi\tests\TestSum.cpp > CMakeFiles\test_exe.dir\tests\TestSum.cpp.i
+
+CMakeFiles/test_exe.dir/tests/TestSum.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_exe.dir/tests/TestSum.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\projects\CalcQuadigi\tests\TestSum.cpp -o CMakeFiles\test_exe.dir\tests\TestSum.cpp.s
+
+CMakeFiles/test_exe.dir/tests/TestVariable.cpp.obj: CMakeFiles/test_exe.dir/flags.make
+CMakeFiles/test_exe.dir/tests/TestVariable.cpp.obj: CMakeFiles/test_exe.dir/includes_CXX.rsp
+CMakeFiles/test_exe.dir/tests/TestVariable.cpp.obj: D:/projects/CalcQuadigi/tests/TestVariable.cpp
+CMakeFiles/test_exe.dir/tests/TestVariable.cpp.obj: CMakeFiles/test_exe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test_exe.dir/tests/TestVariable.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_exe.dir/tests/TestVariable.cpp.obj -MF CMakeFiles\test_exe.dir\tests\TestVariable.cpp.obj.d -o CMakeFiles\test_exe.dir\tests\TestVariable.cpp.obj -c D:\projects\CalcQuadigi\tests\TestVariable.cpp
+
+CMakeFiles/test_exe.dir/tests/TestVariable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_exe.dir/tests/TestVariable.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\projects\CalcQuadigi\tests\TestVariable.cpp > CMakeFiles\test_exe.dir\tests\TestVariable.cpp.i
+
+CMakeFiles/test_exe.dir/tests/TestVariable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_exe.dir/tests/TestVariable.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\projects\CalcQuadigi\tests\TestVariable.cpp -o CMakeFiles\test_exe.dir\tests\TestVariable.cpp.s
 
 # Object files for target test_exe
 test_exe_OBJECTS = \
-"CMakeFiles/test_exe.dir/tests/test.cpp.obj"
+"CMakeFiles/test_exe.dir/tests/TestDivide.cpp.obj" \
+"CMakeFiles/test_exe.dir/tests/TestErrorHandler.cpp.obj" \
+"CMakeFiles/test_exe.dir/tests/TestMultipl.cpp.obj" \
+"CMakeFiles/test_exe.dir/tests/TestParser.cpp.obj" \
+"CMakeFiles/test_exe.dir/tests/TestSubstr.cpp.obj" \
+"CMakeFiles/test_exe.dir/tests/TestSum.cpp.obj" \
+"CMakeFiles/test_exe.dir/tests/TestVariable.cpp.obj"
 
 # External object files for target test_exe
 test_exe_EXTERNAL_OBJECTS =
 
-test_exe.exe: CMakeFiles/test_exe.dir/tests/test.cpp.obj
+test_exe.exe: CMakeFiles/test_exe.dir/tests/TestDivide.cpp.obj
+test_exe.exe: CMakeFiles/test_exe.dir/tests/TestErrorHandler.cpp.obj
+test_exe.exe: CMakeFiles/test_exe.dir/tests/TestMultipl.cpp.obj
+test_exe.exe: CMakeFiles/test_exe.dir/tests/TestParser.cpp.obj
+test_exe.exe: CMakeFiles/test_exe.dir/tests/TestSubstr.cpp.obj
+test_exe.exe: CMakeFiles/test_exe.dir/tests/TestSum.cpp.obj
+test_exe.exe: CMakeFiles/test_exe.dir/tests/TestVariable.cpp.obj
 test_exe.exe: CMakeFiles/test_exe.dir/build.make
 test_exe.exe: lib/libgtest_main.a
 test_exe.exe: libCalcQuaDigiLib.a
@@ -101,7 +203,7 @@ test_exe.exe: lib/libgtest.a
 test_exe.exe: CMakeFiles/test_exe.dir/linkLibs.rsp
 test_exe.exe: CMakeFiles/test_exe.dir/objects1.rsp
 test_exe.exe: CMakeFiles/test_exe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_exe.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\projects\CalcQuadigi\out\build\Preset\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable test_exe.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\test_exe.dir\link.txt --verbose=$(VERBOSE)
 	C:\mingw64\bin\cmake.exe -D TEST_TARGET=test_exe -D TEST_EXECUTABLE=D:/projects/CalcQuadigi/out/build/Preset/test_exe.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=D:/projects/CalcQuadigi/out/build/Preset -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=test_exe_TESTS -D CTEST_FILE=D:/projects/CalcQuadigi/out/build/Preset/test_exe[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_DISCOVERY_EXTRA_ARGS= -D TEST_XML_OUTPUT_DIR= -P C:/mingw64/share/cmake-3.31/Modules/GoogleTestAddTests.cmake
 

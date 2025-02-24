@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "test_exe.exe"
+			"path" : "CalcQuaDigi.exe"
 		},
 		{
-			"path" : "test_exe.pdb"
+			"path" : "CalcQuaDigi.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -19,8 +19,7 @@
 		],
 		"files" : 
 		[
-			"CMakeLists.txt",
-			"out/build/Preset/_deps/googletest-src/googletest/CMakeLists.txt"
+			"CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -30,23 +29,14 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 29,
+				"line" : 36,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 31,
+				"line" : 38,
 				"parent" : 0
-			},
-			{
-				"file" : 1
-			},
-			{
-				"command" : 1,
-				"file" : 1,
-				"line" : 161,
-				"parent" : 3
 			},
 			{
 				"command" : 2,
@@ -68,18 +58,8 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 5,
+					"backtrace" : 3,
 					"path" : "D:/projects/CalcQuadigi/include"
-				},
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "D:/projects/CalcQuadigi/out/build/Preset/_deps/googletest-src/googletest/include"
-				},
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "D:/projects/CalcQuadigi/out/build/Preset/_deps/googletest-src/googletest"
 				}
 			],
 			"language" : "CXX",
@@ -87,13 +67,23 @@
 			{
 				"backtraces" : 
 				[
-					2
+					1
 				],
 				"standard" : "14"
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10
 			]
 		}
 	],
@@ -102,17 +92,9 @@
 		{
 			"backtrace" : 2,
 			"id" : "CalcQuaDigiLib::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
-	"id" : "test_exe::@6890427a1f51a3e7e1df",
+	"id" : "CalcQuaDigi::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -127,17 +109,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib\\libgtest_main.a",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
 				"fragment" : "libCalcQuaDigiLib.a",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 4,
-				"fragment" : "lib\\libgtest.a",
 				"role" : "libraries"
 			},
 			{
@@ -147,8 +119,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "test_exe",
-	"nameOnDisk" : "test_exe.exe",
+	"name" : "CalcQuaDigi",
+	"nameOnDisk" : "CalcQuaDigi.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -160,7 +132,17 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10
 			]
 		}
 	],
@@ -169,7 +151,67 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "tests/test.cpp",
+			"path" : "src/Divide.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/ErrorHandler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Multipl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Parser.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Substr.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Sum.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Utils.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Value.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Variable.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/VariableInputer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

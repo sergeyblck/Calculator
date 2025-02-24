@@ -14,8 +14,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/projects/CalcQuadigi/src/Parser.cpp" "CMakeFiles/CalcQuaDigiLib.dir/src/Parser.cpp.obj" "gcc" "CMakeFiles/CalcQuaDigiLib.dir/src/Parser.cpp.obj.d"
   "D:/projects/CalcQuadigi/src/Substr.cpp" "CMakeFiles/CalcQuaDigiLib.dir/src/Substr.cpp.obj" "gcc" "CMakeFiles/CalcQuaDigiLib.dir/src/Substr.cpp.obj.d"
   "D:/projects/CalcQuadigi/src/Sum.cpp" "CMakeFiles/CalcQuaDigiLib.dir/src/Sum.cpp.obj" "gcc" "CMakeFiles/CalcQuaDigiLib.dir/src/Sum.cpp.obj.d"
+  "D:/projects/CalcQuadigi/src/Utils.cpp" "CMakeFiles/CalcQuaDigiLib.dir/src/Utils.cpp.obj" "gcc" "CMakeFiles/CalcQuaDigiLib.dir/src/Utils.cpp.obj.d"
   "D:/projects/CalcQuadigi/src/Value.cpp" "CMakeFiles/CalcQuaDigiLib.dir/src/Value.cpp.obj" "gcc" "CMakeFiles/CalcQuaDigiLib.dir/src/Value.cpp.obj.d"
   "D:/projects/CalcQuadigi/src/Variable.cpp" "CMakeFiles/CalcQuaDigiLib.dir/src/Variable.cpp.obj" "gcc" "CMakeFiles/CalcQuaDigiLib.dir/src/Variable.cpp.obj.d"
+  "D:/projects/CalcQuadigi/src/VariableInputer.cpp" "CMakeFiles/CalcQuaDigiLib.dir/src/VariableInputer.cpp.obj" "gcc" "CMakeFiles/CalcQuaDigiLib.dir/src/VariableInputer.cpp.obj.d"
   "D:/projects/CalcQuadigi/src/main.cpp" "CMakeFiles/CalcQuaDigiLib.dir/src/main.cpp.obj" "gcc" "CMakeFiles/CalcQuaDigiLib.dir/src/main.cpp.obj.d"
   )
 

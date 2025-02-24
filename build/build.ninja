@@ -86,6 +86,13 @@ build CMakeFiles/CalcQuaDigiLib.dir/src/Sum.cpp.obj: CXX_COMPILER__CalcQuaDigiLi
   OBJECT_DIR = CMakeFiles\CalcQuaDigiLib.dir
   OBJECT_FILE_DIR = CMakeFiles\CalcQuaDigiLib.dir\src
 
+build CMakeFiles/CalcQuaDigiLib.dir/src/Utils.cpp.obj: CXX_COMPILER__CalcQuaDigiLib_unscanned_ D$:/projects/CalcQuadigi/src/Utils.cpp || cmake_object_order_depends_target_CalcQuaDigiLib
+  DEP_FILE = CMakeFiles\CalcQuaDigiLib.dir\src\Utils.cpp.obj.d
+  FLAGS = -std=gnu++14
+  INCLUDES = -ID:/projects/CalcQuadigi/include
+  OBJECT_DIR = CMakeFiles\CalcQuaDigiLib.dir
+  OBJECT_FILE_DIR = CMakeFiles\CalcQuaDigiLib.dir\src
+
 build CMakeFiles/CalcQuaDigiLib.dir/src/Value.cpp.obj: CXX_COMPILER__CalcQuaDigiLib_unscanned_ D$:/projects/CalcQuadigi/src/Value.cpp || cmake_object_order_depends_target_CalcQuaDigiLib
   DEP_FILE = CMakeFiles\CalcQuaDigiLib.dir\src\Value.cpp.obj.d
   FLAGS = -std=gnu++14
@@ -95,6 +102,13 @@ build CMakeFiles/CalcQuaDigiLib.dir/src/Value.cpp.obj: CXX_COMPILER__CalcQuaDigi
 
 build CMakeFiles/CalcQuaDigiLib.dir/src/Variable.cpp.obj: CXX_COMPILER__CalcQuaDigiLib_unscanned_ D$:/projects/CalcQuadigi/src/Variable.cpp || cmake_object_order_depends_target_CalcQuaDigiLib
   DEP_FILE = CMakeFiles\CalcQuaDigiLib.dir\src\Variable.cpp.obj.d
+  FLAGS = -std=gnu++14
+  INCLUDES = -ID:/projects/CalcQuadigi/include
+  OBJECT_DIR = CMakeFiles\CalcQuaDigiLib.dir
+  OBJECT_FILE_DIR = CMakeFiles\CalcQuaDigiLib.dir\src
+
+build CMakeFiles/CalcQuaDigiLib.dir/src/VariableInputer.cpp.obj: CXX_COMPILER__CalcQuaDigiLib_unscanned_ D$:/projects/CalcQuadigi/src/VariableInputer.cpp || cmake_object_order_depends_target_CalcQuaDigiLib
+  DEP_FILE = CMakeFiles\CalcQuaDigiLib.dir\src\VariableInputer.cpp.obj.d
   FLAGS = -std=gnu++14
   INCLUDES = -ID:/projects/CalcQuadigi/include
   OBJECT_DIR = CMakeFiles\CalcQuaDigiLib.dir
@@ -115,7 +129,7 @@ build CMakeFiles/CalcQuaDigiLib.dir/src/main.cpp.obj: CXX_COMPILER__CalcQuaDigiL
 #############################################
 # Link the static library libCalcQuaDigiLib.a
 
-build libCalcQuaDigiLib.a: CXX_STATIC_LIBRARY_LINKER__CalcQuaDigiLib_ CMakeFiles/CalcQuaDigiLib.dir/src/Divide.cpp.obj CMakeFiles/CalcQuaDigiLib.dir/src/ErrorHandler.cpp.obj CMakeFiles/CalcQuaDigiLib.dir/src/Multipl.cpp.obj CMakeFiles/CalcQuaDigiLib.dir/src/Parser.cpp.obj CMakeFiles/CalcQuaDigiLib.dir/src/Substr.cpp.obj CMakeFiles/CalcQuaDigiLib.dir/src/Sum.cpp.obj CMakeFiles/CalcQuaDigiLib.dir/src/Value.cpp.obj CMakeFiles/CalcQuaDigiLib.dir/src/Variable.cpp.obj CMakeFiles/CalcQuaDigiLib.dir/src/main.cpp.obj
+build libCalcQuaDigiLib.a: CXX_STATIC_LIBRARY_LINKER__CalcQuaDigiLib_ CMakeFiles/CalcQuaDigiLib.dir/src/Divide.cpp.obj CMakeFiles/CalcQuaDigiLib.dir/src/ErrorHandler.cpp.obj CMakeFiles/CalcQuaDigiLib.dir/src/Multipl.cpp.obj CMakeFiles/CalcQuaDigiLib.dir/src/Parser.cpp.obj CMakeFiles/CalcQuaDigiLib.dir/src/Substr.cpp.obj CMakeFiles/CalcQuaDigiLib.dir/src/Sum.cpp.obj CMakeFiles/CalcQuaDigiLib.dir/src/Utils.cpp.obj CMakeFiles/CalcQuaDigiLib.dir/src/Value.cpp.obj CMakeFiles/CalcQuaDigiLib.dir/src/Variable.cpp.obj CMakeFiles/CalcQuaDigiLib.dir/src/VariableInputer.cpp.obj CMakeFiles/CalcQuaDigiLib.dir/src/main.cpp.obj
   OBJECT_DIR = CMakeFiles\CalcQuaDigiLib.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -131,8 +145,50 @@ build libCalcQuaDigiLib.a: CXX_STATIC_LIBRARY_LINKER__CalcQuaDigiLib_ CMakeFiles
 
 build cmake_object_order_depends_target_test_exe: phony || cmake_object_order_depends_target_CalcQuaDigiLib cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
 
-build CMakeFiles/test_exe.dir/tests/test.cpp.obj: CXX_COMPILER__test_exe_unscanned_ D$:/projects/CalcQuadigi/tests/test.cpp || cmake_object_order_depends_target_test_exe
-  DEP_FILE = CMakeFiles\test_exe.dir\tests\test.cpp.obj.d
+build CMakeFiles/test_exe.dir/tests/TestDivide.cpp.obj: CXX_COMPILER__test_exe_unscanned_ D$:/projects/CalcQuadigi/tests/TestDivide.cpp || cmake_object_order_depends_target_test_exe
+  DEP_FILE = CMakeFiles\test_exe.dir\tests\TestDivide.cpp.obj.d
+  FLAGS = -std=gnu++14
+  INCLUDES = -ID:/projects/CalcQuadigi/include -isystem D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/include -isystem D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest
+  OBJECT_DIR = CMakeFiles\test_exe.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_exe.dir\tests
+
+build CMakeFiles/test_exe.dir/tests/TestErrorHandler.cpp.obj: CXX_COMPILER__test_exe_unscanned_ D$:/projects/CalcQuadigi/tests/TestErrorHandler.cpp || cmake_object_order_depends_target_test_exe
+  DEP_FILE = CMakeFiles\test_exe.dir\tests\TestErrorHandler.cpp.obj.d
+  FLAGS = -std=gnu++14
+  INCLUDES = -ID:/projects/CalcQuadigi/include -isystem D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/include -isystem D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest
+  OBJECT_DIR = CMakeFiles\test_exe.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_exe.dir\tests
+
+build CMakeFiles/test_exe.dir/tests/TestMultipl.cpp.obj: CXX_COMPILER__test_exe_unscanned_ D$:/projects/CalcQuadigi/tests/TestMultipl.cpp || cmake_object_order_depends_target_test_exe
+  DEP_FILE = CMakeFiles\test_exe.dir\tests\TestMultipl.cpp.obj.d
+  FLAGS = -std=gnu++14
+  INCLUDES = -ID:/projects/CalcQuadigi/include -isystem D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/include -isystem D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest
+  OBJECT_DIR = CMakeFiles\test_exe.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_exe.dir\tests
+
+build CMakeFiles/test_exe.dir/tests/TestParser.cpp.obj: CXX_COMPILER__test_exe_unscanned_ D$:/projects/CalcQuadigi/tests/TestParser.cpp || cmake_object_order_depends_target_test_exe
+  DEP_FILE = CMakeFiles\test_exe.dir\tests\TestParser.cpp.obj.d
+  FLAGS = -std=gnu++14
+  INCLUDES = -ID:/projects/CalcQuadigi/include -isystem D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/include -isystem D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest
+  OBJECT_DIR = CMakeFiles\test_exe.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_exe.dir\tests
+
+build CMakeFiles/test_exe.dir/tests/TestSubstr.cpp.obj: CXX_COMPILER__test_exe_unscanned_ D$:/projects/CalcQuadigi/tests/TestSubstr.cpp || cmake_object_order_depends_target_test_exe
+  DEP_FILE = CMakeFiles\test_exe.dir\tests\TestSubstr.cpp.obj.d
+  FLAGS = -std=gnu++14
+  INCLUDES = -ID:/projects/CalcQuadigi/include -isystem D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/include -isystem D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest
+  OBJECT_DIR = CMakeFiles\test_exe.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_exe.dir\tests
+
+build CMakeFiles/test_exe.dir/tests/TestSum.cpp.obj: CXX_COMPILER__test_exe_unscanned_ D$:/projects/CalcQuadigi/tests/TestSum.cpp || cmake_object_order_depends_target_test_exe
+  DEP_FILE = CMakeFiles\test_exe.dir\tests\TestSum.cpp.obj.d
+  FLAGS = -std=gnu++14
+  INCLUDES = -ID:/projects/CalcQuadigi/include -isystem D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/include -isystem D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest
+  OBJECT_DIR = CMakeFiles\test_exe.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_exe.dir\tests
+
+build CMakeFiles/test_exe.dir/tests/TestVariable.cpp.obj: CXX_COMPILER__test_exe_unscanned_ D$:/projects/CalcQuadigi/tests/TestVariable.cpp || cmake_object_order_depends_target_test_exe
+  DEP_FILE = CMakeFiles\test_exe.dir\tests\TestVariable.cpp.obj.d
   FLAGS = -std=gnu++14
   INCLUDES = -ID:/projects/CalcQuadigi/include -isystem D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest/include -isystem D:/projects/CalcQuadigi/build/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\test_exe.dir
@@ -146,7 +202,7 @@ build CMakeFiles/test_exe.dir/tests/test.cpp.obj: CXX_COMPILER__test_exe_unscann
 #############################################
 # Link the executable test_exe.exe
 
-build test_exe.exe test_exe[1]_tests.cmake | ${cmake_ninja_workdir}test_exe[1]_tests.cmake: CXX_EXECUTABLE_LINKER__test_exe_ CMakeFiles/test_exe.dir/tests/test.cpp.obj | lib/libgtest_main.a libCalcQuaDigiLib.a lib/libgtest.a || libCalcQuaDigiLib.a lib/libgtest.a lib/libgtest_main.a
+build test_exe.exe test_exe[1]_tests.cmake | ${cmake_ninja_workdir}test_exe[1]_tests.cmake: CXX_EXECUTABLE_LINKER__test_exe_ CMakeFiles/test_exe.dir/tests/TestDivide.cpp.obj CMakeFiles/test_exe.dir/tests/TestErrorHandler.cpp.obj CMakeFiles/test_exe.dir/tests/TestMultipl.cpp.obj CMakeFiles/test_exe.dir/tests/TestParser.cpp.obj CMakeFiles/test_exe.dir/tests/TestSubstr.cpp.obj CMakeFiles/test_exe.dir/tests/TestSum.cpp.obj CMakeFiles/test_exe.dir/tests/TestVariable.cpp.obj | lib/libgtest_main.a libCalcQuaDigiLib.a lib/libgtest.a || libCalcQuaDigiLib.a lib/libgtest.a lib/libgtest_main.a
   LINK_LIBRARIES = lib/libgtest_main.a  libCalcQuaDigiLib.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\test_exe.dir
   POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\projects\CalcQuadigi\build && C:\mingw64\bin\cmake.exe -D TEST_TARGET=test_exe -D TEST_EXECUTABLE=D:/projects/CalcQuadigi/build/test_exe.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=D:/projects/CalcQuadigi/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=test_exe_TESTS -D CTEST_FILE=D:/projects/CalcQuadigi/build/test_exe[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_DISCOVERY_EXTRA_ARGS= -D TEST_XML_OUTPUT_DIR= -P C:/mingw64/share/cmake-3.31/Modules/GoogleTestAddTests.cmake"
@@ -207,6 +263,13 @@ build CMakeFiles/CalcQuaDigi.dir/src/Sum.cpp.obj: CXX_COMPILER__CalcQuaDigi_unsc
   OBJECT_DIR = CMakeFiles\CalcQuaDigi.dir
   OBJECT_FILE_DIR = CMakeFiles\CalcQuaDigi.dir\src
 
+build CMakeFiles/CalcQuaDigi.dir/src/Utils.cpp.obj: CXX_COMPILER__CalcQuaDigi_unscanned_ D$:/projects/CalcQuadigi/src/Utils.cpp || cmake_object_order_depends_target_CalcQuaDigi
+  DEP_FILE = CMakeFiles\CalcQuaDigi.dir\src\Utils.cpp.obj.d
+  FLAGS = -std=gnu++14
+  INCLUDES = -ID:/projects/CalcQuadigi/include
+  OBJECT_DIR = CMakeFiles\CalcQuaDigi.dir
+  OBJECT_FILE_DIR = CMakeFiles\CalcQuaDigi.dir\src
+
 build CMakeFiles/CalcQuaDigi.dir/src/Value.cpp.obj: CXX_COMPILER__CalcQuaDigi_unscanned_ D$:/projects/CalcQuadigi/src/Value.cpp || cmake_object_order_depends_target_CalcQuaDigi
   DEP_FILE = CMakeFiles\CalcQuaDigi.dir\src\Value.cpp.obj.d
   FLAGS = -std=gnu++14
@@ -216,6 +279,13 @@ build CMakeFiles/CalcQuaDigi.dir/src/Value.cpp.obj: CXX_COMPILER__CalcQuaDigi_un
 
 build CMakeFiles/CalcQuaDigi.dir/src/Variable.cpp.obj: CXX_COMPILER__CalcQuaDigi_unscanned_ D$:/projects/CalcQuadigi/src/Variable.cpp || cmake_object_order_depends_target_CalcQuaDigi
   DEP_FILE = CMakeFiles\CalcQuaDigi.dir\src\Variable.cpp.obj.d
+  FLAGS = -std=gnu++14
+  INCLUDES = -ID:/projects/CalcQuadigi/include
+  OBJECT_DIR = CMakeFiles\CalcQuaDigi.dir
+  OBJECT_FILE_DIR = CMakeFiles\CalcQuaDigi.dir\src
+
+build CMakeFiles/CalcQuaDigi.dir/src/VariableInputer.cpp.obj: CXX_COMPILER__CalcQuaDigi_unscanned_ D$:/projects/CalcQuadigi/src/VariableInputer.cpp || cmake_object_order_depends_target_CalcQuaDigi
+  DEP_FILE = CMakeFiles\CalcQuaDigi.dir\src\VariableInputer.cpp.obj.d
   FLAGS = -std=gnu++14
   INCLUDES = -ID:/projects/CalcQuadigi/include
   OBJECT_DIR = CMakeFiles\CalcQuaDigi.dir
@@ -236,7 +306,7 @@ build CMakeFiles/CalcQuaDigi.dir/src/main.cpp.obj: CXX_COMPILER__CalcQuaDigi_uns
 #############################################
 # Link the executable CalcQuaDigi.exe
 
-build CalcQuaDigi.exe: CXX_EXECUTABLE_LINKER__CalcQuaDigi_ CMakeFiles/CalcQuaDigi.dir/src/Divide.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/ErrorHandler.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/Multipl.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/Parser.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/Substr.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/Sum.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/Value.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/Variable.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/main.cpp.obj | libCalcQuaDigiLib.a || libCalcQuaDigiLib.a
+build CalcQuaDigi.exe: CXX_EXECUTABLE_LINKER__CalcQuaDigi_ CMakeFiles/CalcQuaDigi.dir/src/Divide.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/ErrorHandler.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/Multipl.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/Parser.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/Substr.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/Sum.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/Utils.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/Value.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/Variable.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/VariableInputer.cpp.obj CMakeFiles/CalcQuaDigi.dir/src/main.cpp.obj | libCalcQuaDigiLib.a || libCalcQuaDigiLib.a
   LINK_LIBRARIES = libCalcQuaDigiLib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CalcQuaDigi.dir
   POST_BUILD = cd .
